@@ -89,10 +89,11 @@
     left:           0;
     right:          0;
     z-index:        1;
+    backdrop-filter: blur(20px);
 }
 
 .bg-light{
-    background-color: rgba(255, 255, 255, 0.3)!important;
+    background-color: rgba(167, 167, 167, 0.3)!important;
 }
 
 /* .bg-light::before{
