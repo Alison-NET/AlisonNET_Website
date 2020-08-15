@@ -9,6 +9,10 @@
     margin-top:     100px;
 }
 
+.mt-75{
+    margin-top:     75px;
+}
+
 .mt-50{
     margin-top:     50px;
 }
@@ -19,6 +23,10 @@
 
 .mb-100{
     margin-bottom:  100px;
+}
+
+.mb-75{
+    margin-bottom:  75px;
 }
 
 .mb-50{
@@ -256,10 +264,9 @@
 /* STRENGTHS */
 
 .strengths-news{
-    display:        flex;
-    align-items: center;
     background-color: #eceff3;
-    height:         120vh;
+    overflow:           auto; 
+    min-height:         120vh;
 }
 
 .strengths-card{
@@ -374,20 +381,14 @@
 
 
 
-.about-us-content-container{
-    display:        flex;
-    align-items:    center;
-    
-}
-
 .about-us-content{
     padding-left: 100px;
 }
 
 .about-us-image{
-    height: 80vh;
-    width: 100%;
-    object-fit: cover;
+    min-height:         80vh;
+    width:              100%;
+    object-fit:         cover;
 }
 
 .about-us-title{
@@ -419,7 +420,8 @@
 
 .services{
     background-image: url('images/dots/round-dots-blue.png');
-    height: 120vh;
+    min-height: 110vh;
+    overflow: auto;
 }
 
 
@@ -443,12 +445,12 @@
     border-width:   4px;
     border-radius:  10px;
     border-color: white;
-    margin-top:     0;
+    margin-top:     5px;
 }
 
 .services-desc {
     font-family:    'Raleway', sans-serif;
-    font-size:      24px;
+    font-size:      22px;
     font-weight:    400;
     /* width:          80%; */
 }
