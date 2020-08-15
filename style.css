@@ -281,12 +281,56 @@
 
 /* LATEST NEWS */
 
+.latest-news{
+    padding: 28px;
+}
+
+.latest-news > hr {
+    border-width: 4px;
+    width: 70px;
+    border-radius: 10px;
+    border-color: #224FAC;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
 .latest-news-title{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+    margin-left: 10px;
     color: #224FAC;
+}
+
+.news-item-time-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-item-time-icon{
+    width: 18px;
+    filter: invert(85%) sepia(7%) saturate(405%) hue-rotate(192deg) brightness(84%) contrast(87%);
+}
+
+.news-item-time{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #AFB2C0;
+}
+
+.news-item-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #717588;
+}
+
+.news-item > hr{
+    margin-top: 0px;
+    border-width: 3px;
 }
 
 /* LATEST NEWS */
