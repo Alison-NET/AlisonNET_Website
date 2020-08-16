@@ -52,6 +52,12 @@
     box-shadow:     1px 10px 20px 0px rgba(186,195,214,.4);
 }
 
+.custom-shadow-dark{
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(53,84,151,0.65);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(53,84,151,0.65);
+    box-shadow: 0px 4px 16px 0px rgba(53,84,151,0.65);
+}
+
 .custom-borders{
     border-radius:  15px;
 }
@@ -452,8 +458,60 @@
     font-family:    'Raleway', sans-serif;
     font-size:      22px;
     font-weight:    400;
-    /* width:          80%; */
 }
+
+
+/* SERVICE-CARD */
+.services-cards .card-img-top{
+    width: 64px;
+    margin: 20px 0;
+}
+
+.services-cards .card-body{
+    padding: 30px;
+    padding-bottom: 15px;
+}
+
+.services-cards .card-title{
+    font-family:    'Montserrat', sans-serif;
+    /* font-family:    'Poppins', sans-serif; */
+    font-size:      18px;
+    font-weight:    500;
+    color:          #224FAC;
+}
+
+.services-cards .card-text{
+    font-family:    'Montserrat', sans-serif;
+    /* font-family:    'Poppins', sans-serif; */
+    font-size:      12px;
+    font-weight:    500;
+    color:          #A0A5BB;
+
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.services-cards .read-more{
+    font-family:    'Montserrat', sans-serif;
+    font-size:      14px;
+    font-weight:    500;
+    color:          #132a3f;
+    margin-bottom: 20px;
+}
+
+.services-cards .card-hr{
+    width:          100px;
+    border-width:   2px;
+    border-radius:  10px;
+    border-color: #C5C9DA;
+    margin-top:     20px;
+}
+
+/* SERVICE-CARD */
+
 
 
 /* SERVICES */
