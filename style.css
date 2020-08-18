@@ -386,13 +386,13 @@ body{
 
 
 .about-us-content{
-    padding-left: 100px;
+    padding-left:   100px;
 }
 
 .about-us-image{
-    min-height:         80vh;
-    width:              100%;
-    object-fit:         cover;
+    min-height:     80vh;
+    width:          100%;
+    object-fit:     cover;
 }
 
 .about-us-title{
@@ -423,8 +423,8 @@ body{
 
 .services{
     background-image: url('images/dots/round-dots-blue.png');
-    min-height: 110vh;
-    overflow: auto;
+    min-height:     110vh;
+    overflow:       auto;
 }
 
 
@@ -512,6 +512,10 @@ body{
 
 /* LOCATION */
 
+.location-map > .container-fluid{
+    padding: 0;
+}
+
 .location{
     padding-top:    80px;
 }
@@ -542,25 +546,103 @@ body{
     font-size:      16px;
     font-weight:    500;
     color:          #A0A5BB;
-    margin-left:   90px;
+    margin-left:    90px;
 }
 
 /* LOCATION */
 
 /* MAP */
 
+.map{
+    overflow: hidden;
+}
+
 .map-iframe{
-    width: 100%;
-    height: 500px;
+    position:       relative;
+    right:          50%;
+    width:          200%;
+    height:         500px;
 }
 
 /* MAP */
 
 
+/* CONNECT WITH US */
+
+.connect-with-us {
+    background:     linear-gradient(to right, rgba(33, 67, 132, 1) 0%, rgba(27, 88, 206, 1) 100%);
+}
+
+.connect-with-us > .container > .row{
+    height:         220px;
+}
+
+.connect-with-us .row > *{
+    display:        flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connect-with-us-text{
+    font-size:      48px;
+    font-weight:    600;
+    text-transform: capitalize;
+    color:          white;
+    margin:         0;
+}
+
+.connect-with-us-btn{
+    font-family:    'Raleway', sans-serif;
+    font-size:      18px;
+    font-weight:    600;
+    color:          #2E68E0;
+    border-radius:  15px;
+    width:          150px;
+    padding:        28px;
+}
+
+/* CONNECT WITH US */
+
+/* FOOTER */
+
+.footer{
+    font-family:    'Raleway', sans-serif;
+}
+
+.footer .container-fluid{
+    background-color: #1D315A;
+}
+
+.footer .branding-row .branding-logo{
+    width: 80px;
+}
+
+
+.footer .branding-row .branding-name{
+    font-size:      38px;
+    font-weight:    700;
+    color:          white;
+}
+
+.footer .navigation-row .section-name{
+    font-size:      22px;
+    font-weight:    600;
+    color:          white;
+}
+
+.footer .navigation-row .section-item{
+    font-size:      18px;
+    font-weight:    500;
+    color:          white;
+}
+
+/* FOOTER */
+
+
 @media screen and (max-width: 767px){
 
     .heroes-nav{
-        height: 20px;
+        height:     20px;
     }
 
     .slider-item-subtitle{
