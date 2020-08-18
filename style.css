@@ -111,7 +111,7 @@ body{
 
 .heroes-nav{
     position:       absolute;
-    height:         80px;
+    height:         72px;
     left:           0;
     right:          0;
     z-index:        1;
@@ -636,13 +636,21 @@ body{
     color:          white;
 }
 
+.footer .navigation-row .section-item-separator{
+    width:          90px;
+    margin-left: 0;
+    border-width:   6px;
+    border-radius:  10px;
+    border-color: #2E68E0;
+}
+
 /* FOOTER */
 
 
 @media screen and (max-width: 767px){
 
     .heroes-nav{
-        height:     20px;
+        height:         50px;
     }
 
     .slider-item-subtitle{
