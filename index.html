@@ -1,488 +1,595 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 
-  <!-- Animate -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- Slick -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--My CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <!-- Slick -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" rel="stylesheet"
-    type="text/css">
-  <!--My CSS-->
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Home</title>
+  </head>
 
-  <title>Home</title>
-</head>
-
-<body>
-
-  <!-- Heroes -->
-  <section class="heroes">
-
-    <!-- Navigation -->
-    <nav class="heroes-nav sticky-top navbar navbar-expand-lg navbar-light bg-light">
-
-      <div class="container">
-        <div class="nav-branding col-auto">
-          <img class="navbar-logo" src="images/logos/branding/logo.png">
-          <a class="navbar-brand" href="#">AlisonNET</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse col justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">About us</a>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">IT Support</a>
-                <a class="dropdown-item" href="#">Consulting</a>
-                <a class="dropdown-item" href="#">Business Intelligence</a>
-              </div>
-            </li>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LOG IN</a>
+  <body>
+    <header class="header">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <div class="nav-branding col-auto">
+            <img class="navbar-logo" src="images/logos/branding/logo.png" />
+            <a class="navbar-brand" href="#">AlisonNET</a>
           </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div
+            class="collapse navbar-collapse col justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+              <a class="nav-link" href="#">About us</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">IT Support</a>
+                  <a class="dropdown-item" href="#">Consulting</a>
+                  <a class="dropdown-item" href="#">Business Intelligence</a>
+                </div>
+              </li>
+              <a class="nav-link" href="#">Contact</a>
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >LOG IN</a
+              >
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Slider -->
-    <!-- <div class="container-fluid container-slider"> -->
-    <div class="container-slider">  
+    <section class="heroes container-slider">
+      <!-- Slider -->
       <div class="slick-services">
-
         <div class="slider-item">
           <div class="image-div">
-            <img class="slider-item-image" src="images/home-slider/ITSup.jpeg">
+            <img
+              class="slider-item-image"
+              src="images/home-slider/ITSup.jpeg"
+            />
           </div>
 
           <div class="slider-content container">
             <h3 class="slider-item-subtitle">LIS & ERM Reimagined</h3>
             <h2 class="slider-item-title">IT Support</h2>
-            <button type="button" class="btn btn-primary slider-item-btn">Learn more</button>
+            <button type="button" class="btn btn-primary slider-item-btn">
+              Learn more
+            </button>
           </div>
         </div>
 
         <div class="slider-item">
           <div class="image-div">
-            <img class="slider-item-image" src="images/home-slider/BI.jpg">
+            <img class="slider-item-image" src="images/home-slider/BI.jpg" />
           </div>
           <div class="slider-content container">
-            <h2 class="slider-item-title">Business<br>Intelligence</h2>
-            <button type="button" class="btn btn-primary slider-item-btn">Learn more</button>
+            <h2 class="slider-item-title">Business<br />Intelligence</h2>
+            <button type="button" class="btn btn-primary slider-item-btn">
+              Learn more
+            </button>
           </div>
         </div>
 
         <div class="slider-item">
           <div class="image-div">
-            <img class="slider-item-image" src="images/home-slider/Consulting.jpg">
+            <img
+              class="slider-item-image"
+              src="images/home-slider/Consulting.jpg"
+            />
           </div>
 
           <div class="slider-content container">
             <h3 class="slider-item-subtitle">Professional</h3>
             <h2 class="slider-item-title">Consulting</h2>
-            <button type="button" class="btn btn-primary slider-item-btn">Learn more</button>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Strengths / News -->
-  <section class="strengths-news d-flex align-items-md-center">
-    <div class="container">
-      <div class="row">
-
-        <!-- Strengths -->
-
-        <div class="strengths col-md-9">
-          <div class="card strengths-card custom-shadow custom-borders">
-            <div class="card-body container">
-              <div class="row">
-                <div class="card-icon col-auto">
-                  <img class="card-icon-image" src="images/icons/quality.svg">
-                </div>
-                <div class="card-text-content col">
-                  <h5 class="card-title">Efficiency.</h5>
-                  <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum industry's standard dummy text ever since the 1500sLorem Ipsum is simply industry. Lorem Ipsum
-                    industry's standard dummy text ever since the 1500s.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card strengths-card custom-shadow custom-borders mt-50">
-            <div class="card-body container">
-              <div class="row">
-                <div class="card-icon col-auto">
-                  <img class="card-icon-image" src="images/icons/quality.svg">
-                </div>
-                <div class="card-text-content col">
-                  <h5 class="card-title">Qualified Staff.</h5>
-                  <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum industry's standard dummy text ever since the 1500sLorem Ipsum is simply industry. Lorem Ipsum
-                    industry's standard dummy text ever since the 1500s.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card strengths-card custom-shadow custom-borders mt-50">
-            <div class="card-body container">
-              <div class="row">
-                <div class="card-icon col-auto">
-                  <img class="card-icon-image" src="images/icons/quality.svg">
-                </div>
-                <div class="card-text-content col">
-                  <h5 class="card-title">Latest Equipment.</h5>
-                  <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum industry's standard dummy text ever since the 1500sLorem Ipsum is simply industry. Lorem Ipsum
-                    industry's standard dummy text ever since the 1500s.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- News -->
-
-        <div class="latest-news custom-shadow custom-borders col-md-3">
-          <h5 class="latest-news-title">Latest news</h5>
-          <hr>
-
-          <div class="news-container">
-            <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div>
-
-            <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div>
-
-            <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div>
-
-            <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div>
-
-            <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div>
-
-            <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div>
-
-            <!-- <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div>
-
-            <div class="news-item">
-              <div class="row">
-                <div class="news-item-time-container col-auto">
-                  <img class="news-item-time-icon" src="images/icons/time.svg">
-                  <h6 class="news-item-time">3H</h6>
-                </div>
-                <h5 class="news-item-title col">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</h5>
-              </div>
-              <hr>
-            </div> -->
-
+            <button type="button" class="btn btn-primary slider-item-btn">
+              Learn more
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About us -->
-
-  <section class="about-us">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 nopadding">
-          <img src="images/about-us.jpg" alt="" class="about-us-image">
-        </div>
-        <div class="col-md-6 about-us-content-container d-flex align-items-md-center">
-          <div class="about-us-content">
-            <h3 class="about-us-title">
-              About us
-            </h3>
-            <hr>
-            <h5 class="about-us-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in...
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-
-  <section class="services d-flex align-items-md-center">
-    <div class="container">
-      <div class="services-texts text-center text-white">
-        <h4 class="services-subtitle">We work with</h4>
-        <h3 class="services-title">Amazing services</h3>
-        <hr>
-        <h5 class="services-desc mt-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</h5>
-      </div>
-
-      <div class="services-cards mt-75">
-        <div class="card-deck">
-          <div class="card custom-borders custom-shadow-dark">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <img class="card-img-top" src="images/icons/laptop.svg" alt="Card image cap">
-              <h5 class="card-title">Consulting</h5>
-              <div>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              
-                <hr class="card-hr">
-                <small class="read-more">READ MORE</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="card custom-borders custom-shadow-dark">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <img class="card-img-top" src="images/icons/files.svg" alt="Card image cap">
-              <h5 class="card-title">Business Intelligence</h5>
-              <div>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <hr class="card-hr">
-                <small class="read-more">READ MORE</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="card custom-borders custom-shadow-dark">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <img class="card-img-top" src="images/icons/it.svg" alt="Card image cap">
-              <h5 class="card-title">IT Support</h5>
-                <div>  
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <hr class="card-hr">
-                <small class="read-more">READ MORE</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="card custom-borders custom-shadow-dark">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <img class="card-img-top" src="images/icons/science.svg" alt="Card image cap">
-              <h5 class="card-title">Shop</h5>
-              <div>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <hr class="card-hr">
-                <small class="read-more">READ MORE</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location -->
-
-  <section class="location-map">
-    <div class="container-fluid">
-      <div class="container location">
+    <!-- Strengths / News -->
+    <section class="strengths-news d-flex align-items-md-center">
+      <div class="container">
         <div class="row">
-        <div class="col-md-5">
-            <h5 class="location-subtitle">You can find us in</h5>
-            <h3 class="location-title">Our location</h3>
+          <!-- Strengths -->
+
+          <div class="strengths col-md-9">
+            <div class="card strengths-card custom-shadow custom-borders">
+              <div class="card-body container">
+                <div class="row">
+                  <div class="card-icon col-auto">
+                    <img
+                      class="card-icon-image"
+                      src="images/icons/quality.svg"
+                    />
+                  </div>
+                  <div class="card-text-content col">
+                    <h5 class="card-title">Efficiency.</h5>
+                    <p class="card-desc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum industry's standard
+                      dummy text ever since the 1500sLorem Ipsum is simply
+                      industry. Lorem Ipsum industry's standard dummy text ever
+                      since the 1500s.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card strengths-card custom-shadow custom-borders mt-50">
+              <div class="card-body container">
+                <div class="row">
+                  <div class="card-icon col-auto">
+                    <img
+                      class="card-icon-image"
+                      src="images/icons/quality.svg"
+                    />
+                  </div>
+                  <div class="card-text-content col">
+                    <h5 class="card-title">Qualified Staff.</h5>
+                    <p class="card-desc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum industry's standard
+                      dummy text ever since the 1500sLorem Ipsum is simply
+                      industry. Lorem Ipsum industry's standard dummy text ever
+                      since the 1500s.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card strengths-card custom-shadow custom-borders mt-50">
+              <div class="card-body container">
+                <div class="row">
+                  <div class="card-icon col-auto">
+                    <img
+                      class="card-icon-image"
+                      src="images/icons/quality.svg"
+                    />
+                  </div>
+                  <div class="card-text-content col">
+                    <h5 class="card-title">Latest Equipment.</h5>
+                    <p class="card-desc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum industry's standard
+                      dummy text ever since the 1500sLorem Ipsum is simply
+                      industry. Lorem Ipsum industry's standard dummy text ever
+                      since the 1500s.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-7 d-flex justify-content-start">
-            <div class="location-separator"></div>
-            <h4 class="location-text align-self-center">610 W 42nd Street<br>Unit N36H<br>New York, NY 10036</h4>
+
+          <!-- News -->
+
+          <div class="latest-news custom-shadow custom-borders col-md-3">
+            <h5 class="latest-news-title">Latest news</h5>
+            <hr />
+
+            <div class="news-container">
+              <div class="news-item">
+                <div class="row">
+                  <div class="news-item-time-container col-auto">
+                    <img
+                      class="news-item-time-icon"
+                      src="images/icons/time.svg"
+                    />
+                    <h6 class="news-item-time">3H</h6>
+                  </div>
+                  <p class="news-item-title col">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipiscing elit
+                  </p>
+                </div>
+                <hr />
+              </div>
+
+              <div class="news-item">
+                <div class="row">
+                  <div class="news-item-time-container col-auto">
+                    <img
+                      class="news-item-time-icon"
+                      src="images/icons/time.svg"
+                    />
+                    <h6 class="news-item-time">3H</h6>
+                  </div>
+                  <p class="news-item-title col">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipiscing elit
+                  </p>
+                </div>
+                <hr />
+              </div>
+
+              <div class="news-item">
+                <div class="row">
+                  <div class="news-item-time-container col-auto">
+                    <img
+                      class="news-item-time-icon"
+                      src="images/icons/time.svg"
+                    />
+                    <h6 class="news-item-time">3H</h6>
+                  </div>
+                  <p class="news-item-title col">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipiscing elit
+                  </p>
+                </div>
+                <hr />
+              </div>
+
+              <div class="news-item">
+                <div class="row">
+                  <div class="news-item-time-container col-auto">
+                    <img
+                      class="news-item-time-icon"
+                      src="images/icons/time.svg"
+                    />
+                    <h6 class="news-item-time">3H</h6>
+                  </div>
+                  <p class="news-item-title col">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipiscing elit
+                  </p>
+                </div>
+                <hr />
+              </div>
+
+              <div class="news-item">
+                <div class="row">
+                  <div class="news-item-time-container col-auto">
+                    <img
+                      class="news-item-time-icon"
+                      src="images/icons/time.svg"
+                    />
+                    <h6 class="news-item-time">3H</h6>
+                  </div>
+                  <p class="news-item-title col">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipiscing elit
+                  </p>
+                </div>
+                <hr />
+              </div>
+
+              <div class="news-item">
+                <div class="row">
+                  <div class="news-item-time-container col-auto">
+                    <img
+                      class="news-item-time-icon"
+                      src="images/icons/time.svg"
+                    />
+                    <h6 class="news-item-time">3H</h6>
+                  </div>
+                  <p class="news-item-title col">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipiscing elit
+                  </p>
+                </div>
+                <hr />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="map mt-50">
-          <iframe class="map-iframe align-self-center" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1920&height=1080&hl=en&q=610%20W%2042nd%20St%20%231%2C%20New%20York%2C%20NY%2010036&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe> 
+    </section>
 
+    <!-- About us -->
+
+    <section class="about-us">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 nopadding">
+            <img src="images/about-us.jpg" alt="" class="about-us-image" />
+          </div>
+          <div
+            class="col-md-6 about-us-content-container d-flex align-items-md-center"
+          >
+            <div class="about-us-content">
+              <h3 class="about-us-title">
+                About us
+              </h3>
+              <hr />
+              <p class="about-us-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
+                sit amet convallis nunc scelerisque in.Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Duis at dictum risus, non
+                suscipit arcu. Quisque aliquam posuere tortor, sit amet
+                convallis nunc scelerisque in...
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Connect with us -->
+    <!-- Services -->
 
-  <section class="connect-with-us container-fluid">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-8 text-container">
-            <p class="connect-with-us-text">
-              Connect with us
-            </p>
+    <section class="services d-flex align-items-md-center">
+      <div class="container">
+        <div class="services-texts text-center text-white">
+          <h4 class="services-subtitle">We work with</h4>
+          <h3 class="services-title">Amazing services</h3>
+          <hr />
+          <p class="services-desc mt-25">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+            accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+          </p>
         </div>
 
-        <div class="col-md-4 btn-container">
-          <button type="button" class="btn btn-light connect-with-us-btn">Let's talk</button>
+        <div class="services-cards mt-75">
+          <div class="card-deck">
+            <div class="card custom-borders custom-shadow-dark">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <img
+                  class="card-img-top"
+                  src="images/icons/laptop.svg"
+                  alt="Card image cap"
+                />
+                <h5 class="card-title">Consulting</h5>
+                <div>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+
+                  <hr class="card-hr" />
+                  <small class="read-more">READ MORE</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card custom-borders custom-shadow-dark">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <img
+                  class="card-img-top"
+                  src="images/icons/files.svg"
+                  alt="Card image cap"
+                />
+                <h5 class="card-title">Business Intelligence</h5>
+                <div>
+                  <p class="card-text">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <hr class="card-hr" />
+                  <small class="read-more">READ MORE</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card custom-borders custom-shadow-dark">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <img
+                  class="card-img-top"
+                  src="images/icons/it.svg"
+                  alt="Card image cap"
+                />
+                <h5 class="card-title">IT Support</h5>
+                <div>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </p>
+                  <hr class="card-hr" />
+                  <small class="read-more">READ MORE</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card custom-borders custom-shadow-dark">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <img
+                  class="card-img-top"
+                  src="images/icons/science.svg"
+                  alt="Card image cap"
+                />
+                <h5 class="card-title">Shop</h5>
+                <div>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </p>
+                  <hr class="card-hr" />
+                  <small class="read-more">READ MORE</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <!-- Location -->
 
-  <footer class="footer container-fluid ptb-80">
+    <section class="location-map">
+      <div class="container-fluid">
+        <div class="container location">
+          <div class="row">
+            <div class="col-md-5">
+              <h5 class="location-subtitle">You can find us in</h5>
+              <h3 class="location-title">Our location</h3>
+            </div>
+            <div class="col-md-7 d-flex justify-content-start">
+              <div class="location-separator"></div>
+              <h4 class="location-text align-self-center">
+                610 W 42nd Street<br />Unit N36H<br />New York, NY 10036
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="map mt-50">
+          <iframe
+            class="map-iframe align-self-center"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=1920&height=1080&hl=en&q=610%20W%2042nd%20St%20%231%2C%20New%20York%2C%20NY%2010036&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect with us -->
+
+    <section class="connect-with-us container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-container">
+            <p class="connect-with-us-text">Connect with us</p>
+          </div>
+
+          <div class="col-md-4 btn-container">
+            <button type="button" class="btn btn-light connect-with-us-btn">
+              Let's talk
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer ptb-80">
       <div class="container">
         <div class="branding-row row">
           <div class="branding d-flex align-items-center col-auto">
-            <img class="branding-logo" src="images/logos/branding/logo-blue.png">
+            <img
+              class="branding-logo"
+              src="images/logos/branding/logo-blue.png"
+            />
             <a class="branding-name" href="#">AlisonNET</a>
           </div>
         </div>
         <div class="navigation-row row">
           <div class="col-md-4 nav-section">
-            <div class="section-name">
-              Contact us
+            <div class="section-name">Contact us</div>
+            <hr class="section-item-separator" />
+            <div class="section-item">374-215-0610</div>
+            <div class="section-item">
+              610 W 42nd Street<br />Unit N36H<br />New York, NY 10036
             </div>
-            <hr class="section-item-separator">
-              <div class="section-item">
-                374-215-0610
-              </div>
-              <div class="section-item">
-                610 W 42nd Street<br>Unit N36H<br>New York, NY 10036
-              </div>
-              <div class="section-item">
-                info@alisonnet.com
-              </div>
+            <div class="section-item">info@alisonnet.com</div>
           </div>
 
           <div class="col-md-4 nav-section">
-            <div class="section-name">
-              Navigate
-            </div>
-            <hr class="section-item-separator">
-              <div class="section-item">
-                Home
-              </div>
-              <div class="section-item">
-                About us
-              </div>
-              <div class="section-item">
-                Services
-              </div>
-              <div class="section-item">
-                Contact
-              </div>
+            <div class="section-name">Navigate</div>
+            <hr class="section-item-separator" />
+            <div class="section-item">Home</div>
+            <div class="section-item">About us</div>
+            <div class="section-item">Services</div>
+            <div class="section-item">Contact</div>
           </div>
 
           <div class="col-md-4 nav-section">
-            <div class="section-name">
-              Services
-            </div>
-            <hr class="section-item-separator">
-              <div class="section-item">
-                Shop
-              </div>
-              <div class="section-item">
-                Consulting
-              </div>
-              <div class="section-item">
-                IT Support
-              </div>
-              <div class="section-item">
-                Business Intelligence
-              </div>
+            <div class="section-name">Services</div>
+            <hr class="section-item-separator" />
+            <div class="section-item">Shop</div>
+            <div class="section-item">Consulting</div>
+            <div class="section-item">IT Support</div>
+            <div class="section-item">Business Intelligence</div>
           </div>
         </div>
       </div>
-  </footer>
+    </footer>
 
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="script.js"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
