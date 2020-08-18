@@ -565,6 +565,7 @@ body{
 
 .map-iframe{
     position:       relative;
+    display: block;
     right:          50%;
     width:          200%;
     height:         500px;
