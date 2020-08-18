@@ -185,7 +185,7 @@ body{
 }
 
 .slider-item-image{
-    max-height:     100vh;
+    height:     100vh;
     width:          100%;
     object-fit:     cover;
 }
@@ -429,6 +429,8 @@ body{
 
 .services{
     background-image: url('images/dots/round-dots-blue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height:     110vh;
     overflow:       auto;
 }
