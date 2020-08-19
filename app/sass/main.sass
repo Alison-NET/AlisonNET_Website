@@ -1,49 +1,7 @@
 @import imports
 @import config
-
-// CUSTOM USER STYLES & IMPORTS
-
-
-/* SPACES */
-
-.mt-100
-	margin-top: 100px
-
-
-.mt-75
-	margin-top: 75px
-
-
-.mt-50
-	margin-top: 50px
-
-
-.mt-25
-	margin-top: 25px
-
-
-.mb-100
-	margin-bottom: 100px
-
-
-.mb-75
-	margin-bottom: 75px
-
-
-.mb-50
-	margin-bottom: 50px
-
-
-.mb-25
-	margin-bottom: 25px
-
-
-.ptb-80
-	padding-top: 80px
-	padding-bottom: 80px
-
-
-/* SPACES */
+@import spaces
+@import weights
 
 /* SIMILARITIES */
 
@@ -66,42 +24,12 @@
 
 /* SIMILARITIES */
 
-/* FONTS */
-
-
-/* FONTS */
-
-/* WEIGHTS */
-
-.w-light
-	font-weight: 300
-
-.w-regular
-	font-weight: 400
-
-.w-medium
-	font-weight: 500
-	
-.w-semibold
-	font-weight: 600
-
-.w-bold
-	font-weight: 700
-
-.w-extrabold
-	font-weight: 800
-   
-.w-black
-	font-weight: 900
-
-/* WEIGHTS */
-
 
 /* HEROES */
 
 .heroes
 	position: relative
-	max-height: 100vh
+	height: 100vh
 	background-color: aqua
 
 
@@ -114,6 +42,8 @@
 	right: 0
 	z-index: 1
 	backdrop-filter: blur(20px)
+	+media-breakpoint-down(md)
+		height: 30px
 
 
 .bg-light
@@ -127,17 +57,14 @@
 	text-transform: uppercase
 
 
-.navbar-light .navbar-nav .nav-link
-	padding-right: 40px
-	color: white
-
-
-.navbar-light .navbar-nav .nav-link.active
-	color: white
-
-
-.navbar-light .navbar-nav .nav-link:hover
-	color: #0F5290
+.navbar-light .navbar-nav 
+	.nav-link
+		padding-right: 40px
+		color: white
+	.nav-link.active 
+		color: white
+	.nav-link:hover	
+		color: #0F5290
 
 
 .navbar-light .navbar-brand
@@ -154,33 +81,58 @@
 
 /* NAVBAR */
 
-
 /* SLIDER */
-
 
 .slider-item
 	position: relative
+	&-image
+		height: 100vh
+		width: 100%
+		object-fit: cover
+	&-title
+		font-size: 112px
+		font-weight: 400
+		line-height: 100%
+		color: white
+		+media-breakpoint-down(md)
+			font-size: 64px
+			font-weight: 400
+			line-height: 100%
+	&-subtitle
+		font-family: 'Raleway', sans-serif
+		font-size: 38px
+		font-weight: 200
+		text-transform: uppercase
+		color: white
+		+media-breakpoint-down(md)
+			font-size: 18px
+			font-weight: 200	
+	&-btn
+		background-color: #3458F4
+		border-radius: 30px
+		padding: 12px 30px
+		margin-top: 20px
+		font-size: 19px
+		+media-breakpoint-down(md)
+			border-radius: 30px
+			padding: 12px 30px
+			margin-top: 20px
+			font-size: 19px	
 
 
-.slider-item-image
-	height: 100vh
-	width: 100%
-	object-fit: cover
+.image-div
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		display: block
 
-
-.image-div::before
-	content: ""
-	position: absolute
-	top: 0
-	left: 0
-	bottom: 0
-	right: 0
-	display: block
-
-	background: #ffffff
-	background: linear-gradient(to right, rgba(85, 121, 168,0.8 ) 0%, rgba(83,113,175,0.1) 100%)
-	opacity: 1
-
+		background: #ffffff
+		background: linear-gradient(to right, rgba(85, 121, 168,0.8 ) 0%, rgba(83,113,175,0.1) 100%)
+		opacity: 1
 
 
 .slider-content
@@ -188,26 +140,21 @@
 	top: 50%
 	left: 0
 	right: 0
+	transform: translateY(-50%)
 
 
 .slick-dots
 	bottom: 25px
-
-
-.slick-dots li
-	margin: 0
-
-
-.slick-dots li button::before
-	opacity: 0.3
-	font-size: 30px
-	color: white
-
-
-.slick-dots li.slick-active button:before
-	opacity: 1
-	font-size: 40px
-	color: white
+	li
+		margin: 0
+		button::before
+			opacity: 0.3
+			font-size: 30px
+			color: white
+	li.slick-active button:before
+		opacity: 1
+		font-size: 50px
+		color: white
 
 
 .slick-prev
@@ -217,33 +164,6 @@
 
 .slick-next
 	right: 15px
-
-
-.slider-content
-	transform: translateY(-50%)
-
-
-.slider-item-subtitle
-	font-family: 'Raleway', sans-serif
-	font-size: 38px
-	font-weight: 200
-	text-transform: uppercase
-	color: white
-
-
-.slider-item-title
-	font-size: 112px
-	font-weight: 400
-	line-height: 100%
-	color: white
-
-
-.slider-item-btn
-	background-color: #3458F4
-	border-radius: 30px
-	padding: 12px 30px
-	margin-top: 20px
-	font-size: 19px
 
 
 /* SLIDER */
@@ -263,34 +183,22 @@
 	margin-right: 75px
 	padding-left: 10px
 	padding-right: 25px
-
-
-.card-icon
-	display: flex
-	justify-content: center
-	align-items: center
-
-
-.card-icon-image
-	width: 50px
-
-
-.strengths-card .card-title
-	font-size: 20px
-	font-weight: 600
-	color: #224FAC
-	margin-top: 12px
-
-
-.strengths-card .card-desc
-	font-family: 'Raleway', sans-serif
-	font-size: 15px
-	font-weight: 500
-	color: #717588
-
-
-.latest-news
-	background-color: white
+	.card-icon
+		display: flex
+		justify-content: center
+		align-items: center
+		&-image
+			width: 50px
+	.card-title
+		font-size: 20px
+		font-weight: 600
+		color: #224FAC
+		margin-top: 12px
+	.card-desc
+		font-family: 'Raleway', sans-serif
+		font-size: 15px
+		font-weight: 500
+		color: #717588
 
 
 /* STRENGTHS */
@@ -298,107 +206,84 @@
 /* LATEST NEWS */
 
 .latest-news
+	background-color: white
 	padding: 28px
 	overflow: hidden
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		display: block
+		background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%)
+		z-index: 1
+	&-separator	
+		border-width: 4px
+		width: 70px
+		border-radius: 10px
+		border-color: #224FAC
+		margin-top: 0px
+		margin-left: 0px
+	&-title
+		font-size: 20px
+		font-weight: 600
+		text-transform: uppercase
+		margin-left: 10px
+		color: #224FAC
 
-
-.latest-news::before
-	content: ""
-	position: absolute
-	top: 0
-	bottom: 0
-	left: 0
-	right: 0
-	display: block
-
-	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%)
-	z-index: 1
-
-
-.latest-news > hr 
-	border-width: 4px
-	width: 70px
-	border-radius: 10px
-	border-color: #224FAC
-	margin-top: 0px
-	margin-left: 0px
-
-
-.latest-news-title
-	font-size: 20px
-	font-weight: 600
-	text-transform: uppercase
-	margin-left: 10px
-	color: #224FAC
-
-
-.news-item-time-container
-	display: flex
-	flex-direction: column
-	justify-content: center
-	align-items: center
-	padding-right: 0
-
-
-.news-item-time-icon
-	width: 18px
-	filter: invert(85%) sepia(7%) saturate(405%) hue-rotate(192deg) brightness(84%) contrast(87%)
-
-
-.news-item-time
-	font-family: 'Open Sans', sans-serif
-	font-size: 12px
-	color: #AFB2C0
-
-
-.news-item-title
-	font-family: 'Raleway', sans-serif
-	font-size: 14px
-	font-weight: 600
-	color: #717588
-
-
-.news-item > hr
-	margin-top: 0px
-	border-width: 3px
+.news-item
+	&-time-container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding-right: 0
+	&-time-icon
+		width: 18px
+		filter: invert(85%) sepia(7%) saturate(405%) hue-rotate(192deg) brightness(84%) contrast(87%)
+	&-time
+		font-family: 'Open Sans', sans-serif
+		font-size: 12px
+		color: #AFB2C0
+	&-title
+		font-family: 'Raleway', sans-serif
+		font-size: 14px
+		font-weight: 600
+		color: #717588
+	> hr
+		margin-top: 0px
+		border-width: 3px
 
 
 /* LATEST NEWS */
 
 /* ABOUT-US */
 
-
-
-.about-us-content
-	padding-left: 100px
-
-
-.about-us-image
-	min-height: 80vh
-	width: 100%
-	object-fit: cover
-
-
-.about-us-title
-	font-size: 36px
-	font-weight: 500
-	color: #224FAC
-
-
-.about-us-content > hr
-	width: 100px
-	border-width: 2px
-	border-radius: 10px
-	border-color: #224FAC
-	margin-left: 0
-	margin-top: 0
-
-
-.about-us-desc
-	width: 370px
-	font-family: 'Open Sans', sans-serif
-	font-size: 16px
-	color: #AFB2C0
+.about-us
+	&-image
+		min-height: 80vh
+		width: 100%
+		object-fit: cover
+	&-content
+		padding-left: 100px
+		> hr
+			width: 100px
+			border-width: 2px
+			border-radius: 10px
+			border-color: #224FAC
+			margin-left: 0
+			margin-top: 0
+	&-title
+		font-size: 36px
+		font-weight: 500
+		color: #224FAC
+	&-desc
+		width: 370px
+		font-family: 'Open Sans', sans-serif
+		font-size: 16px
+		color: #AFB2C0
 
 
 /* ABOUT-US */
@@ -411,80 +296,64 @@
 	background-size: cover
 	min-height: 110vh
 	overflow: auto
-
-
-
-.services-subtitle
-	font-family: 'Raleway', sans-serif
-	font-size: 28px
-	font-style: italic
-	font-weight: 300
-	opacity: 0.75
-
-
-.services-title
-	font-size: 28px
-	font-weight: 500
-	text-transform: uppercase
-
-
-.services-texts > hr 
-	width: 90px
-	border-width: 4px
-	border-radius: 10px
-	border-color: white
-	margin-top: 5px
-
-
-.services-desc 
-	font-family: 'Raleway', sans-serif
-	font-size: 22px
-	font-weight: 400
+	&-subtitle
+		font-family: 'Raleway', sans-serif
+		font-size: 28px
+		font-style: italic
+		font-weight: 300
+		opacity: 0.75
+	&-title
+		font-size: 28px
+		font-weight: 500
+		text-transform: uppercase
+	&-texts > hr 
+		width: 90px
+		border-width: 4px
+		border-radius: 10px
+		border-color: white
+		margin-top: 5px
+	&-desc 
+		font-family: 'Raleway', sans-serif
+		font-size: 22px
+		font-weight: 400
 
 
 /* SERVICE-CARD */
 
-.services-cards .card-img-top
-	width: 64px
-	margin: 20px 0
-
-.services-cards .card-body
-	padding: 30px
-	padding-bottom: 15px
-
-.services-cards .card-title
-	font-family: 'Montserrat', sans-serif
-	font-size: 18px
-	font-weight: 500
-	color: #224FAC
-
-.services-cards .card-text
-	font-family: 'Montserrat', sans-serif
-	font-size: 12px
-	font-weight: 500
-	color: #A0A5BB
-
-	overflow: hidden
-	text-overflow: ellipsis
-	display: -webkit-box
-	-webkit-line-clamp: 3 // number of lines to show
-	-webkit-box-orient: vertical
-
-
-.services-cards .read-more
-	font-family: 'Montserrat', sans-serif
-	font-size: 14px
-	font-weight: 500
-	color: #132a3f
-	margin-bottom: 20px
-
-
-.services-cards .card-hr
-	width: 50%
-	border-width: 2px
-	border-radius: 10px
-	border-color: #C5C9DA
-	margin-top: 20px
+.services-cards 
+	.card-img-top
+		width: 64px
+		margin: 20px 0
+	.card-body
+		padding: 30px
+		padding-bottom: 15px
+	.card-title
+		font-family: 'Montserrat', sans-serif
+		font-size: 18px
+		font-weight: 500
+		color: #224FAC
+	.card-text
+		font-family: 'Montserrat', sans-serif
+		font-size: 12px
+		font-weight: 500
+		color: #A0A5BB
+		overflow: hidden
+		text-overflow: ellipsis
+		display: -webkit-box
+		-webkit-line-clamp: 3 // number of lines to show
+		-webkit-box-orient: vertical
+	.read-more
+		font-family: 'Montserrat', sans-serif
+		font-size: 14px
+		font-weight: 500
+		color: #132a3f
+		margin-bottom: 20px
+	.card-hr
+		width: 50%
+		border-width: 2px
+		border-radius: 10px
+		border-color: #C5C9DA
+		margin-top: 20px
 
 
 /* SERVICE-CARD */
@@ -496,38 +365,28 @@
 .location-map > .container-fluid
 	padding: 0
 
-
 .location
 	padding-top: 80px
-
-
-.location-subtitle
-	font-size: 18px
-	font-style: italic
-	font-weight: 400
-	color: #8997B4
-
-
-.location-title
-	font-size: 34px
-	font-weight: 600
-	color: #224FAC
-
-
-.location-separator
-	height: 80px
-	width: 6px
-	border-left: 3px solid #224FAC
-	border-radius: 100px
-
-
-
-.location-text
-	font-family: 'Montserrat', sans-serif
-	font-size: 16px
-	font-weight: 500
-	color: #A0A5BB
-	margin-left: 90px
+	&-subtitle
+		font-size: 18px
+		font-style: italic
+		font-weight: 400
+		color: #8997B4
+	&-title
+		font-size: 34px
+		font-weight: 600
+		color: #224FAC
+	&-separator
+		height: 80px
+		width: 6px
+		border-left: 3px solid #224FAC
+		border-radius: 100px
+	&-text
+		font-family: 'Montserrat', sans-serif
+		font-size: 16px
+		font-weight: 500
+		color: #A0A5BB
+		margin-left: 90px
 
 
 /* LOCATION */
@@ -536,14 +395,12 @@
 
 .map
 	overflow: hidden
-
-
-.map-iframe
-	position: relative
-	display: block
-	right: 50%
-	width: 200%
-	height: 500px
+	&-iframe
+		position: relative
+		display: block
+		right: 50%
+		width: 200%
+		height: 500px
 
 
 /* MAP */
@@ -553,34 +410,26 @@
 
 .connect-with-us 
 	background: linear-gradient(to right, rgba(33, 67, 132, 1) 0%, rgba(27, 88, 206, 1) 100%)
-
-
-.connect-with-us > .container > .row
-	height: 220px
-
-
-.connect-with-us .row > *
-	display: flex
-	flex-direction: column
-	justify-content: center
-
-
-.connect-with-us-text
-	font-size: 48px
-	font-weight: 600
-	text-transform: capitalize
-	color: white
-	margin: 0
-
-
-.connect-with-us-btn
-	font-family: 'Raleway', sans-serif
-	font-size: 18px
-	font-weight: 600
-	color: #2E68E0
-	border-radius: 15px
-	width: 150px
-	padding: 16px 26px
+	& > .container > .row
+		height: 220px
+	& .row > *
+		display: flex
+		flex-direction: column
+		justify-content: center
+	&-text
+		font-size: 48px
+		font-weight: 600
+		text-transform: capitalize
+		color: white
+		margin: 0
+	&-btn
+		font-family: 'Raleway', sans-serif
+		font-size: 18px
+		font-weight: 600
+		color: #2E68E0
+		border-radius: 15px
+		width: 150px
+		padding: 16px 26px
 
 
 /* CONNECT WITH US */
@@ -590,67 +439,34 @@
 .footer
 	font-family: 'Raleway', sans-serif
 	background-color: #1D315A
-
-
-.footer .branding-row .branding-logo
-	width: 80px
-
-
-.footer .branding-row .branding-name
-	font-size: 36px
-	font-weight: 600
-	color: white
-
-
-.footer .navigation-row .section-name
-	font-size: 18px
-	font-weight: 600
-	text-transform: uppercase
-	margin-top: 24px
-	color: white
-
-
-.footer .navigation-row .section-item
-	font-size: 16px
-	font-weight: 500
-	color: white
-	margin-top: 8px
-
-
-.footer .navigation-row .section-item-separator
-	width: 60px
-	margin-left: 0
-	margin-top: 5px
-	margin-bottom: 12px
-	border-width: 6px
-	border-radius: 10px
-	border-color: #2E68E0
+	.branding-row 
+		.branding-logo
+			width: 80px
+		.branding-name
+			font-size: 36px
+			font-weight: 600
+			color: white
+	.navigation-row 
+		.section
+			&-name
+				font-size: 18px
+				font-weight: 600
+				text-transform: uppercase
+				margin-top: 24px
+				color: white
+			&-item
+				font-size: 16px
+				font-weight: 500
+				color: white
+				margin-top: 8px
+			&-separator
+				width: 60px
+				margin-left: 0
+				margin-top: 5px
+				margin-bottom: 12px
+				border-width: 6px
+				border-radius: 10px
+				border-color: #2E68E0
 
 
 /* FOOTER */
-
-
-@media screen and (max-width: 767px)
-
-	.header nav
-		height: 90px
-
-
-	.slider-item-subtitle
-		font-size: 18px
-		font-weight: 200
-
-	
-	.slider-item-title
-		font-size: 64px
-		font-weight: 400
-		line-height: 100%
-
-	
-	.slider-item-btn
-		border-radius: 30px
-		padding: 12px 30px
-		margin-top: 20px
-		font-size: 19px
-
-
