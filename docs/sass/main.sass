@@ -294,7 +294,8 @@
 	background-image: url('../images/dest/dots/round-dots-blue.png')
 	background-repeat: no-repeat
 	background-size: cover
-	min-height: 110vh
+	min-height: 100vh
+	padding: 150px
 	overflow: auto
 	&-subtitle
 		font-family: 'Raleway', sans-serif
@@ -467,6 +468,26 @@
 				border-width: 6px
 				border-radius: 10px
 				border-color: #2E68E0
+	.bottom-row
+		.rights
+			font-family: 'Poppins', sans-serif
+			color: #A0A5BB
+			text-transform: capitalize
+			margin: 0
+			+media-breakpoint-down(sm)
+				text-align: center
+		.social-info
+			.icon
+				height: 28px
+				margin-left: 50px
+				// margin-right: 20px
+				+media-breakpoint-down(sm)
+					margin-left: 0px
+					margin-top: 20px
+			+media-breakpoint-down(sm)
+				display: flex
+				justify-content: center 
+
 
 
 /* FOOTER */
