@@ -1,5 +1,5 @@
-/node_modules/
-/.git/
-/**/Thumbs.db
-/**/*.DS_Store
-/**/package-lock.json
+/frontend-dev/node_modules/
+/frontend-dev/.git/
+/frontend-dev/**/Thumbs.db
+/frontend-dev/**/*.DS_Store
+/frontend-dev/**/package-lock.json
