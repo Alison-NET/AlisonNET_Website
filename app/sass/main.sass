@@ -42,8 +42,7 @@
 	right: 0
 	z-index: 1
 	backdrop-filter: blur(20px)
-	+media-breakpoint-down(md)
-		height: 30px
+		// height: 30px
 
 
 .bg-light
@@ -183,6 +182,9 @@
 	margin-right: 75px
 	padding-left: 10px
 	padding-right: 25px
+	+media-breakpoint-down(sm)
+		margin-right: 0px
+
 	.card-icon
 		display: flex
 		justify-content: center
@@ -266,8 +268,16 @@
 		min-height: 80vh
 		width: 100%
 		object-fit: cover
+	&-content-container
+		display: flex
+		justify-content: center
+		align-items: center
+		+media-breakpoint-up(lg)
+			justify-content: flex-start	
 	&-content
-		padding-left: 100px
+		padding-left: 0px
+		+media-breakpoint-up(lg)
+			padding-left: 100px
 		> hr
 			width: 100px
 			border-width: 2px
@@ -294,9 +304,9 @@
 	background-image: url('../images/dest/dots/round-dots-blue.png')
 	background-repeat: no-repeat
 	background-size: cover
-	min-height: 100vh
-	padding: 150px
+	min-height: 110vh
 	overflow: auto
+
 	&-subtitle
 		font-family: 'Raleway', sans-serif
 		font-size: 28px
@@ -322,12 +332,28 @@
 /* SERVICE-CARD */
 
 .services-cards 
+	.card
+		+media-breakpoint-down(md)
+			margin: 20px
+		+media-breakpoint-down(sm)
+			margin: 25px
+		+media-breakpoint-up(sm)
+			margin: 20px 10px
 	.card-img-top
 		width: 64px
 		margin: 20px 0
+		+media-breakpoint-down(sm)
+			align-self: center
+		+media-breakpoint-up(sm)
+			align-self: flex-start	
 	.card-body
 		padding: 30px
 		padding-bottom: 15px
+		height: 360px
+		+media-breakpoint-down(sm)
+			height: 300px
+		+media-breakpoint-up(sm)
+			height: 360px	
 	.card-title
 		font-family: 'Montserrat', sans-serif
 		font-size: 18px
@@ -402,6 +428,9 @@
 		right: 50%
 		width: 200%
 		height: 500px
+		+media-breakpoint-down(sm)
+			right: 150%
+			width: 400%
 
 
 /* MAP */
@@ -411,8 +440,7 @@
 
 .connect-with-us 
 	background: linear-gradient(to right, rgba(33, 67, 132, 1) 0%, rgba(27, 88, 206, 1) 100%)
-	& > .container > .row
-		height: 220px
+	padding: 74px 0
 	& .row > *
 		display: flex
 		flex-direction: column
@@ -423,6 +451,9 @@
 		text-transform: capitalize
 		color: white
 		margin: 0
+		+media-breakpoint-down(sm)
+			font-size: 36px
+			text-align: center
 	&-btn
 		font-family: 'Raleway', sans-serif
 		font-size: 18px
@@ -431,6 +462,11 @@
 		border-radius: 15px
 		width: 150px
 		padding: 16px 26px
+		+media-breakpoint-down(sm)
+			margin-top: 15px
+			align-self: center
+
+
 
 
 /* CONNECT WITH US */
@@ -477,16 +513,17 @@
 			+media-breakpoint-down(sm)
 				text-align: center
 		.social-info
+			display: flex 
+			justify-content: flex-end
+			+media-breakpoint-down(sm)
+				justify-content: center
 			.icon
 				height: 28px
 				margin-left: 50px
-				// margin-right: 20px
 				+media-breakpoint-down(sm)
-					margin-left: 0px
-					margin-top: 20px
-			+media-breakpoint-down(sm)
-				display: flex
-				justify-content: center 
+					margin: 0px 20px
+					margin-top: 35px
+			
 
 
 
