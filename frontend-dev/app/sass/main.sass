@@ -548,10 +548,19 @@
 .connect-with-us 
 	background: linear-gradient(to right, rgba(33, 67, 132, 1) 0%, rgba(27, 88, 206, 1) 100%)
 	padding: 74px 0
+	position: relative
+	overflow: hidden
 	& .row > *
 		display: flex
 		flex-direction: column
 		justify-content: center
+	.gradient-dots
+		position: absolute
+		transform: scale(0.85)
+		top: -35px
+		right: -85px
+		+media-breakpoint-down(sm)
+			right: -365px
 	&-text
 		font-size: 48px
 		font-weight: 600

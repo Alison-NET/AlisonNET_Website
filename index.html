@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header id="header" class="header">
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
@@ -31,8 +31,8 @@
 
 				<div class="collapse navbar-collapse col justify-content-end" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-						<a class="nav-link" href="#">About us</a>
+						<a class="nav-link active" href="#header">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#about-us">About us</a>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -263,7 +263,7 @@
 
 	<!-- About us -->
 
-	<section class="about-us">
+	<section id="about-us" class="about-us">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6 nopadding animate__animated animate__fadeIn wow">
@@ -294,8 +294,8 @@
 	<section class="services d-flex align-items-md-center">
 		<div class="container">
 			<div class="services-texts text-center text-white animate__animated animate__fadeIn wow">
-				<h4 class="services-subtitle">We work with</h4>
-				<h3 class="services-title">Amazing services</h3>
+				<h4 class="services-subtitle animate__animated animate__zoomIn wow">We work with</h4>
+				<h3 class="services-title animate__animated animate__rubberBand wow">Amazing services</h3>
 				<hr />
 				<p class="services-desc mt-25">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
@@ -320,6 +320,7 @@
 								<hr class="card-hr" />
 								<div class="card-bottom">
 									<small class="read-more">READ MORE</small>
+									<a href=""><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
 								</div>
 							</div>
 						</div>
@@ -339,6 +340,7 @@
 								<hr class="card-hr" />
 								<div class="card-bottom">
 									<small class="read-more">READ MORE</small>
+									<a href=""><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
 								</div>
 							</div>
 						</div>
@@ -359,6 +361,7 @@
 								<hr class="card-hr" />
 								<div class="card-bottom">
 									<small class="read-more">READ MORE</small>
+									<a href=""><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
 								</div>
 							</div>
 						</div>
@@ -379,6 +382,7 @@
 								<hr class="card-hr" />
 								<div class="card-bottom">
 									<small class="read-more">READ MORE</small>
+									<a href=""><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
 								</div>
 							</div>
 						</div>
@@ -391,7 +395,7 @@
 
 	<!-- Location -->
 
-	<section class="location-map">
+	<section id="location" class="location-map">
 		<div class="container-fluid">
 			<div class="container location">
 				<div class="row">
@@ -420,12 +424,13 @@
 	<section class="connect-with-us container-fluid">
 		<div class="container">
 			<div class="row">
+				<img src="images/dest/dots/gradient dots.svg" alt="" class="gradient-dots">
 				<div class="col-md-8 text-container">
-					<p class="connect-with-us-text">Connect with us</p>
+					<p class="connect-with-us-text animate__animated animate__fadeInLeft wow">Connect with us</p>
 				</div>
 
 				<div class="col-md-4 btn-container">
-					<button type="button" class="btn btn-light connect-with-us-btn">
+					<button type="button" class="btn btn-light connect-with-us-btn animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
 						Let's talk
 					</button>
 				</div>
@@ -457,28 +462,27 @@
 				<div class="col-md-4 section">
 					<div class="section-name">Navigate</div>
 					<hr class="section-separator" />
-					<div class="section-item">Home</div>
-					<div class="section-item">About us</div>
-					<div class="section-item">Services</div>
-					<div class="section-item">Contact</div>
+					<a href=""><div class="section-item">Home</div></a>
+					<a href=""><div class="section-item">About us</div></a>
+					<a href=""><div class="section-item">Services</div></a>
+					<a href=""><div class="section-item">Contact</div></a>
 				</div>
 
 				<div class="col-md-4 section">
 					<div class="section-name">Services</div>
 					<hr class="section-separator" />
-					<div class="section-item">Shop</div>
-					<div class="section-item">Consulting</div>
-					<div class="section-item">IT Support</div>
-					<div class="section-item">Business Intelligence</div>
+					<a href=""><div class="section-item">Shop</div></a>
+					<a href=""><div class="section-item">Consulting</div></a>
+					<a href=""><div class="section-item">IT Support</div></a>
+					<a href=""><div class="section-item">Business Intelligence</div></a>
 				</div>
 			</div>
 			<div class="bottom-row row mt-50">
 				<p class="rights col-md-6 ">&copy; AlisonNET. All rights reserved.</p>
-				<!-- <div class="social-info col-md-6 d-flex flex-row-reverse justify-content-md-start justify-content-sm-center"> -->
 				<div class="social-info col-md-6">
-					<img class="icon" src="images/dest/icons/facebook.svg" alt="">
-					<img class="icon" src="images/dest/icons/twitter.svg" alt="">
-					<img class="icon" src="images/dest/icons/linkedin.svg" alt="">
+					<a href=""><img class="icon" src="images/dest/icons/facebook.svg" alt=""></a>
+					<a href=""><img class="icon" src="images/dest/icons/twitter.svg" alt=""></a>
+					<a href=""><img class="icon" src="images/dest/icons/linkedin.svg" alt=""></a>
 				</div>
 			</div>
 		</div>
