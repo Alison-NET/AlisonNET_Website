@@ -132,8 +132,9 @@
 		padding: 12px 30px
 		margin-top: 20px
 		font-size: 19px
-		+media-breakpoint-down(sm)
-			// align-self: center
+		transition: $transition-zoom-time
+		&:hover
+			transform: scale(1.05)
 
 
 .image-div
@@ -451,16 +452,24 @@
 		margin-top: 20px
 	.card-bottom
 		display: flex
-		justify-content: flex-start
+		justify-content: space-between
+		align-items: center
 		+media-breakpoint-down(sm)
 			justify-content: center
 		+media-breakpoint-up(sm)
-			justify-content: flex-start
+			justify-content: space-between
 		.read-more
 			font-family: 'Montserrat', sans-serif
 			font-size: 14px
 			font-weight: 500
-			color: #132a3f	
+			color: #132a3f
+		.arrow
+			height: 27px		
+			margin-left: 10px
+			filter: invert(19%) sepia(11%) saturate(4257%) hue-rotate(171deg) brightness(90%) contrast(84%);
+			transition: $transition-zoom-time
+			&:hover
+				transform: scale(1.2)
 
 
 /* SERVICE-CARD */
@@ -514,9 +523,13 @@
 
 /* LOCATION */
 
+.location-map
+	box-shadow: 0px -5px 35px 0px #12368370
+
 /* MAP */
 
 .map
+	box-shadow: 0px 0px 25px 0px #44618a33
 	overflow: hidden
 	&-iframe
 		position: relative
@@ -528,9 +541,7 @@
 			right: 150%
 			width: 400%
 
-
 /* MAP */
-
 
 /* CONNECT WITH US */
 
