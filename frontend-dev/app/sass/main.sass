@@ -14,7 +14,7 @@
 	box-shadow: 1px 10px 10px -10px rgba(186,195,214,.2)
 
 .custom-shadow-on-hover
-	transition: $transition-zoom-time
+	transition: $transition-time1
 	&:hover
 		box-shadow: -1px 12px 20px 0px rgba(186,195,214,.35)
 
@@ -24,14 +24,14 @@
 	box-shadow: 0px 4px 16px 0px rgba(53,84,151,0.65)
 
 .custom-shadow-dark-on-hover
-	transition: $transition-zoom-time
+	transition: $transition-time1
 	&:hover
 		box-shadow: -1px 6px 30px 0px #2e4881a6
 
 
 
 .zoom-on-hover
-	transition: $transition-zoom-time
+	transition: $transition-time1
 	&:hover
 		transform: scale(1.05)
 
@@ -63,6 +63,7 @@ header .top-information
 		+media-breakpoint-down(md)
 			height: auto
 	.title
+		padding-right: 0
 		span
 			font-size: 20px
 			font-weight: 600
@@ -70,7 +71,10 @@ header .top-information
 			color: white
 			+media-breakpoint-down(md)
 				margin-top: 8px
-				font-size: 18px
+			+media-breakpoint-down(sm)	
+				font-size: 16px
+			+media-breakpoint-down(xs)
+				font-size: 22px
 	.desc
 		span
 			font-size: 13px
@@ -84,7 +88,7 @@ header .top-information
 		display: flex
 		justify-content: flex-end
 		+media-breakpoint-down(md)
-			justify-content: flex-start		
+			justify-content: flex-start
 		.btn
 			font-family: 'Montserrat', sans-serif
 			font-size: 14px
@@ -98,8 +102,9 @@ header .top-information
 				font-size: 12px
 				margin: 12px 0px
 			+media-breakpoint-down(md)
-				font-size: 13px
-		
+				font-size: 11px
+			+media-breakpoint-down(xs)
+				font-size: 12px	
 	.close-icon
 		position: absolute
 		top: 50%
@@ -139,6 +144,11 @@ header nav
 			font-size: 15px
 			text-transform: uppercase
 			margin-left: 40px
+			transition: $transition-time1
+			
+	.show
+		>.nav-link
+			color: #3458f4 !important			
 
 
 
@@ -150,6 +160,11 @@ header nav
 	.navbar-nav 
 		.nav-link
 			color: white
+			opacity: 0.8
+			&:hover
+				transform: scale(1.03)
+				color: white !important
+				opacity: 1
 
 .nav-white
 	.navbar-brand
@@ -157,6 +172,9 @@ header nav
 	.navbar-nav 
 		.nav-link
 			color: black
+			&:hover
+				transform: scale(1.03)
+				color: black !important
 
 
 
@@ -198,9 +216,9 @@ header nav
 		line-height: 100%
 		color: white
 		+media-breakpoint-down(md)
-			font-size: 94px
+			font-size: 84px
 		+media-breakpoint-down(sm)
-			font-size: 64px
+			font-size: 62px
 	&-subtitle
 		font-family: 'Raleway', sans-serif
 		font-size: 38px
@@ -215,7 +233,7 @@ header nav
 		padding: 12px 30px
 		margin-top: 20px
 		font-size: 19px
-		transition: $transition-zoom-time
+		transition: $transition-time1
 		&:hover
 			transform: scale(1.05)
 
@@ -447,12 +465,9 @@ header nav
 	.container
 		margin-top: 100px
 		margin-bottom: 100px
-		+media-breakpoint-down(sm)
+		+media-breakpoint-down(xs)
 			margin-top: 80px
 			margin-bottom: 30px
-		+media-breakpoint-up(sm)
-			margin-top: 100px
-			margin-bottom: 100px
 	&-subtitle
 		font-family: 'Raleway', sans-serif
 		font-size: 28px
@@ -480,12 +495,15 @@ header nav
 .services-cards 
 	margin-top: 50px
 	margin-bottom: 25px
-	+media-breakpoint-down(sm)
+	// +media-breakpoint-down(sm)
+	// 	margin-top: 0px
+	// 	margin-bottom: 0px
+	// +media-breakpoint-up(sm)
+	// 	margin-top: 50px
+	// 	margin-bottom: 25px
+	+media-breakpoint-down(xs)
 		margin-top: 0px
 		margin-bottom: 0px
-	+media-breakpoint-up(sm)
-		margin-top: 50px
-		margin-bottom: 25px
 	.card
 		margin: 0px
 		+media-breakpoint-down(md)
@@ -493,10 +511,8 @@ header nav
 	.card-img-top
 		width: 64px
 		margin: 20px 0
-		+media-breakpoint-down(sm)
+		+media-breakpoint-down(xs)
 			align-self: center
-		+media-breakpoint-up(sm)
-			align-self: flex-start
 	.card-body
 		padding: 30px
 		padding-bottom: 20px
@@ -510,12 +526,9 @@ header nav
 		font-size: 18px
 		font-weight: 500
 		color: #224FAC
-		+media-breakpoint-down(sm)
+		+media-breakpoint-down(xs)
 			font-size: 20px
 			text-align: center
-		+media-breakpoint-up(sm)
-			font-size: 18px
-			text-align: left
 	.card-text
 		font-family: 'Montserrat', sans-serif
 		font-size: 12px
@@ -536,10 +549,8 @@ header nav
 		display: flex
 		justify-content: space-between
 		align-items: center
-		+media-breakpoint-down(sm)
+		+media-breakpoint-down(xs)
 			justify-content: center
-		+media-breakpoint-up(sm)
-			justify-content: space-between
 		.read-more
 			font-family: 'Montserrat', sans-serif
 			font-size: 14px
@@ -549,7 +560,7 @@ header nav
 			height: 27px		
 			margin-left: 10px
 			filter: invert(19%) sepia(11%) saturate(4257%) hue-rotate(171deg) brightness(90%) contrast(84%);
-			transition: $transition-zoom-time
+			transition: $transition-time1
 			&:hover
 				transform: scale(1.2)
 
@@ -565,28 +576,22 @@ header nav
 
 .location
 	padding-top: 80px
-	+media-breakpoint-down(sm)
-			padding-top: 50px
-	+media-breakpoint-up(sm)
-			padding-top: 80px
+	+media-breakpoint-down(xs)
+		padding-top: 50px
 	&-subtitle
 		font-size: 18px
 		font-style: italic
 		font-weight: 400
 		color: #8997B4
 		margin-bottom: 8px
-		+media-breakpoint-down(sm)
+		+media-breakpoint-down(xs)
 			margin-bottom: 0px
-		+media-breakpoint-up(sm)
-			margin-bottom: 8px
 	&-title
 		font-size: 34px
 		font-weight: 600
 		color: #224FAC
-		+media-breakpoint-down(sm)
+		+media-breakpoint-down(xs)
 			margin-bottom: 14px
-		+media-breakpoint-up(sm)
-			margin-bottom: 8px
 	&-separator
 		height: 80px
 		width: 6px
