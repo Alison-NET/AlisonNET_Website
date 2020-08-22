@@ -1,0 +1,154 @@
+/* HEADER */
+
+.header-home
+	position: relative
+	.header-container
+		position: absolute
+		left: 0
+		right: 0
+		z-index: 1
+
+
+header .top-information 
+	background: linear-gradient(to right, #FF004C 15%, #7000FF 90%)
+	position: relative
+	&-wrapper
+		padding: 10px 0px
+		align-items: center
+
+	.title
+		padding-right: 0
+		span
+			display: block
+			font-size: 20px
+			font-weight: 600
+			text-transform: capitalize
+			line-height: 1.4
+			color: white
+			+media-breakpoint-down(md)
+				margin-top: 8px
+			+media-breakpoint-down(sm)	
+				font-size: 16px
+			+media-breakpoint-down(xs)
+				font-size: 22px
+	.desc
+		span
+			display: block
+			font-size: 13px
+			font-weight: 500
+			color: white
+			overflow: hidden
+			+media-breakpoint-down(md)
+				font-size: 12px
+				margin: 4px 0px 0px 0px
+	.btn-div
+		display: flex
+		justify-content: flex-end
+		+media-breakpoint-down(md)
+			justify-content: flex-start
+		.btn
+			font-family: 'Montserrat', sans-serif
+			font-size: 14px
+			font-weight: 600
+			border-radius: 30px
+			padding: 4px 20px 4px 20px
+			text-transform: uppercase
+			color: #FF004C
+			// margin-top: 5px 
+			+media-breakpoint-down(lg)
+				font-size: 12px
+				margin: 12px 0px
+			+media-breakpoint-down(md)
+				font-size: 11px
+			+media-breakpoint-down(xs)
+				font-size: 12px	
+	.close-icon
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 10px
+		width: 15px
+		filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(325deg) brightness(105%) contrast(101%);	
+		+media-breakpoint-down(md)
+			top: 18px
+
+
+header nav
+	height: 65px
+	.navbar-logo
+		width: 45px
+		animation: test 2s ease 1s infinite alternate 
+	.navbar-brand
+		font-family: 'Raleway', sans-serif
+		position: relative
+		margin-left: 10px
+		.brand-title
+			font-size: 28px
+			font-weight: 600
+			margin: 0
+		.brand-subtitle
+			position: absolute
+			bottom: 0px
+			font-size: 11px
+			font-weight: 400
+			font-style: italic
+			text-transform: uppercase
+			margin: 0
+	.navbar-nav 
+		.nav-link
+			font-family: 'Raleway', sans-serif
+			font-weight: 600
+			font-size: 15px
+			text-transform: uppercase
+			margin-left: 40px
+			transition: $transition-time1
+			
+	.show
+		>.nav-link
+			color: #3458f4 !important			
+
+
+
+.nav-home
+	background-color: rgba(167, 167, 167, 0.3)!important
+	backdrop-filter: blur(20px)
+	.navbar-brand
+		color: white
+	.navbar-nav 
+		.nav-link
+			color: white
+			opacity: 0.8
+			&:hover
+				transform: scale(1.03)
+				color: white !important
+				opacity: 1
+
+.nav-white
+	.navbar-brand
+		color: black
+	.navbar-nav 
+		.nav-link
+			color: black
+			&:hover
+				transform: scale(1.03)
+				color: black !important
+
+
+
+// @keyframes test
+//   0%
+// 	background-color: red
+//   100%
+// 	background-color: blue
+
+// @keyframes flipAnim
+//   0%
+//     -webkit-transform: rotateY(0)
+// 	-moz-transform: rotateY(0)
+// 	transform: rotateY(0);
+//   100%
+//     -webkit-transform: rotateY(1800deg)
+// 	-moz-transform: rotateY(1800deg)
+// 	transform: rotateY(1800deg)
+
+/* HEADER */
