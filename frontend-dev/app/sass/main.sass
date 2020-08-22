@@ -44,91 +44,93 @@
 
 /* NAVBAR */
 
-.header-home 
+.header-home
 	position: relative
 	&-info
 		position: absolute
 		left: 0
 		right: 0
 		z-index: 1
-		.top-information 
-			background: linear-gradient(to right, #FF004C 15%, #7000FF 90%)
-			.row > *
-				height: 50px
-				display: flex
-				align-items: center
-				+media-breakpoint-down(md)
-					height: auto
-			.title
-				font-size: 20px
-				font-weight: 600
-				text-transform: capitalize
-				color: white
-				margin-top: 3px 
-				+media-breakpoint-down(md)
-					margin-top: 8px
-					font-size: 18px
-			.desc
-				font-size: 13px
-				font-weight: 500
-				color: white
-				margin-top: 6px 
-				overflow: hidden
-				+media-breakpoint-down(md)
-					font-size: 12px
-					margin: 4px 0px 0px 0px
-			.btn-div
-				.btn
-					font-family: 'Montserrat', sans-serif
-					font-weight: 600
-					border-radius: 30px
-					padding: 4px 20px 4px 20px
-					text-transform: uppercase
-					justify-self: flex-end
-					color: #FF004C
-					margin-top: 5px 
-					+media-breakpoint-down(lg)
-						font-size: 12px
-						margin: 12px 0px
-					+media-breakpoint-down(sm)
-						font-size: 16px
-			.close-icon
-				position: absolute
-				top: 8px
-				right: 10px
-				width: 15px
-				filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(325deg) brightness(105%) contrast(101%);
-		nav
-			height: 65px
-			backdrop-filter: blur(20px)
+	
 
 
-.bg-light
+header .top-information 
+	background: linear-gradient(to right, #FF004C 15%, #7000FF 90%)
+	.row > *
+		height: 50px
+		display: flex
+		align-items: center
+		+media-breakpoint-down(md)
+			height: auto
+	.title
+		font-size: 20px
+		font-weight: 600
+		text-transform: capitalize
+		color: white
+		margin-top: 3px 
+		+media-breakpoint-down(md)
+			margin-top: 8px
+			font-size: 18px
+	.desc
+		font-size: 13px
+		font-weight: 500
+		color: white
+		margin-top: 6px 
+		overflow: hidden
+		+media-breakpoint-down(md)
+			font-size: 12px
+			margin: 4px 0px 0px 0px
+	.btn-div
+		.btn
+			font-family: 'Montserrat', sans-serif
+			font-weight: 600
+			border-radius: 30px
+			padding: 4px 20px 4px 20px
+			text-transform: uppercase
+			justify-self: flex-end
+			color: #FF004C
+			margin-top: 5px 
+			+media-breakpoint-down(lg)
+				font-size: 12px
+				margin: 12px 0px
+			+media-breakpoint-down(sm)
+				font-size: 16px
+	.close-icon
+		position: absolute
+		top: 8px
+		right: 10px
+		width: 15px
+		filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(325deg) brightness(105%) contrast(101%);	
+
+
+
+
+.nav-home
+	height: 65px
 	background-color: rgba(167, 167, 167, 0.3)!important
+	backdrop-filter: blur(20px)
+	.navbar-nav 
+		.nav-link
+			font-family: 'Raleway', sans-serif
+			font-weight: 600
+			font-size: 15px
+			text-transform: uppercase
+			color: white
+			margin-left: 40px
 
+.nav-white
+	height: 65px
+	background-color: rgba(167, 167, 167, 0.3)!important
+	backdrop-filter: blur(20px)
+	.navbar-nav 
+		.nav-link
+			font-family: 'Raleway', sans-serif
+			font-weight: 600
+			font-size: 15px
+			text-transform: uppercase
+			color: black
+			margin-left: 40px
 
-.navbar-nav
-	font-family: 'Raleway', sans-serif
-	font-weight: 600
-	font-size: 15px
-	text-transform: uppercase
-
-
-.navbar-light .navbar-nav 
-	.nav-link
-		padding-left: 40px
-		color: white
-	.nav-link.active 
-		color: white
-	.nav-link:hover	
-		color: #0F5290
-
-
-.navbar-light .navbar-brand
-	font-family: 'Raleway', sans-serif
-	font-size: 28px
-	font-weight: 600
-	color: white
 
 .navbar-logo
 	width: 50px
@@ -418,7 +420,7 @@
 	background-repeat: no-repeat
 	background-size: cover
 	min-height: 110vh
-	overflow: auto
+	overflow: hidden
 	.container
 		margin-top: 100px
 		margin-bottom: 100px
