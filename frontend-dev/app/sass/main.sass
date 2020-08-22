@@ -46,73 +46,92 @@
 
 .header-home
 	position: relative
-	&-info
+	.header-container
 		position: absolute
 		left: 0
 		right: 0
 		z-index: 1
 
 
-.navbar-logo
-	width: 50px
-	animation: test 2s ease 1s infinite alternate 
-
 header .top-information 
 	background: linear-gradient(to right, #FF004C 15%, #7000FF 90%)
+	position: relative
 	.row > *
-		height: 50px
+		height: 45px
 		display: flex
 		align-items: center
 		+media-breakpoint-down(md)
 			height: auto
 	.title
-		font-size: 20px
-		font-weight: 600
-		text-transform: capitalize
-		color: white
-		margin-top: 3px 
-		+media-breakpoint-down(md)
-			margin-top: 8px
-			font-size: 18px
+		span
+			font-size: 20px
+			font-weight: 600
+			text-transform: capitalize
+			color: white
+			+media-breakpoint-down(md)
+				margin-top: 8px
+				font-size: 18px
 	.desc
-		font-size: 13px
-		font-weight: 500
-		color: white
-		margin-top: 6px 
-		overflow: hidden
-		+media-breakpoint-down(md)
-			font-size: 12px
-			margin: 4px 0px 0px 0px
+		span
+			font-size: 13px
+			font-weight: 500
+			color: white
+			overflow: hidden
+			+media-breakpoint-down(md)
+				font-size: 12px
+				margin: 4px 0px 0px 0px
 	.btn-div
+		display: flex
+		justify-content: flex-end
+		+media-breakpoint-down(md)
+			justify-content: flex-start		
 		.btn
 			font-family: 'Montserrat', sans-serif
+			font-size: 14px
 			font-weight: 600
 			border-radius: 30px
 			padding: 4px 20px 4px 20px
 			text-transform: uppercase
-			justify-self: flex-end
 			color: #FF004C
-			margin-top: 5px 
+			// margin-top: 5px 
 			+media-breakpoint-down(lg)
 				font-size: 12px
 				margin: 12px 0px
-			+media-breakpoint-down(sm)
-				font-size: 16px
+			+media-breakpoint-down(md)
+				font-size: 13px
+		
 	.close-icon
 		position: absolute
-		top: 8px
+		top: 50%
+		transform: translateY(-50%)
 		right: 10px
 		width: 15px
 		filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(325deg) brightness(105%) contrast(101%);	
+		+media-breakpoint-down(md)
+			top: 18px
 
 
 header nav
 	height: 65px
+	.navbar-logo
+		width: 45px
+		animation: test 2s ease 1s infinite alternate 
 	.navbar-brand
 		font-family: 'Raleway', sans-serif
-		font-weight: 600
-		font-size: 28px
-		margin: 0
+		position: relative
+		margin-left: 10px
+		.brand-title
+			font-size: 28px
+			font-weight: 600
+			margin: 0
+		.brand-subtitle
+			position: absolute
+			bottom: 0px
+			font-size: 11px
+			font-weight: 400
+			font-style: italic
+			text-transform: uppercase
+			margin: 0
 	.navbar-nav 
 		.nav-link
 			font-family: 'Raleway', sans-serif
@@ -263,8 +282,7 @@ header nav
 
 .strengths-news
 	background-color: #eceff3
-	overflow: auto 
-	// min-height: 120vh
+	overflow: hidden 
 	> .container
 		padding: 100px 0px
 
@@ -663,6 +681,7 @@ header nav
 			font-size: 36px
 			font-weight: 600
 			color: white
+			margin-left: 18px
 	.navigation-row 
 		.section
 			&-name
