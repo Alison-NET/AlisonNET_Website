@@ -42,7 +42,7 @@
 
 /* SIMILARITIES */
 
-/* NAVBAR */
+/* HEADER */
 
 .header-home
 	position: relative
@@ -51,8 +51,11 @@
 		left: 0
 		right: 0
 		z-index: 1
-	
 
+
+.navbar-logo
+	width: 50px
+	animation: test 2s ease 1s infinite alternate 
 
 header .top-information 
 	background: linear-gradient(to right, #FF004C 15%, #7000FF 90%)
@@ -103,38 +106,40 @@ header .top-information
 		filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(325deg) brightness(105%) contrast(101%);	
 
 
+header nav
+	height: 65px
+	.navbar-brand
+		font-family: 'Raleway', sans-serif
+		font-weight: 600
+		font-size: 28px
+		margin: 0
+	.navbar-nav 
+		.nav-link
+			font-family: 'Raleway', sans-serif
+			font-weight: 600
+			font-size: 15px
+			text-transform: uppercase
+			margin-left: 40px
+
 
 
 .nav-home
-	height: 65px
 	background-color: rgba(167, 167, 167, 0.3)!important
 	backdrop-filter: blur(20px)
+	.navbar-brand
+		color: white
 	.navbar-nav 
 		.nav-link
-			font-family: 'Raleway', sans-serif
-			font-weight: 600
-			font-size: 15px
-			text-transform: uppercase
 			color: white
-			margin-left: 40px
 
 .nav-white
-	height: 65px
-	background-color: rgba(167, 167, 167, 0.3)!important
-	backdrop-filter: blur(20px)
+	.navbar-brand
+		color: black
 	.navbar-nav 
 		.nav-link
-			font-family: 'Raleway', sans-serif
-			font-weight: 600
-			font-size: 15px
-			text-transform: uppercase
 			color: black
-			margin-left: 40px
 
 
-.navbar-logo
-	width: 50px
-	animation: test 2s ease 1s infinite alternate 
 
 // @keyframes test
 //   0%
@@ -152,7 +157,7 @@ header .top-information
 // 	-moz-transform: rotateY(1800deg)
 // 	transform: rotateY(1800deg)
 
-/* NAVBAR */
+/* HEADER */
 
 .heroes
 	position: relative
