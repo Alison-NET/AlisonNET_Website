@@ -30,7 +30,6 @@
 
 
 
-
 .zoom-on-hover
 	transition: $transition-zoom-time
 	&:hover
@@ -43,32 +42,60 @@
 
 /* SIMILARITIES */
 
-
-.heroes
-	position: relative
-	height: 100vh
-	background-color: aqua
-
-
 /* NAVBAR */
 
-.header nav
-	position: absolute
-	height: 72px
-	left: 0
-	right: 0
-	z-index: 1
-	backdrop-filter: blur(20px)
+.header-home 
+	position: relative
+	&-info
+		position: absolute
+		left: 0
+		right: 0
+		z-index: 1
+		.top-information 
+			background: linear-gradient(to right, #FF004C 15%, #7000FF 90%)
+			.row > *
+				height: 50px
+				display: flex
+				align-items: center
+				+media-breakpoint-down(md)
+					height: auto
+			.title
+				font-size: 20px
+				font-weight: 600
+				text-transform: capitalize
+				color: white
+				margin-top: 3px 
+				+media-breakpoint-down(md)
+					margin-top: 8px
+					font-size: 18px
+			.desc
+				font-size: 13px
+				font-weight: 500
+				color: white
+				margin-top: 6px 
+				overflow: hidden
+				+media-breakpoint-down(md)
+					font-size: 12px
+					margin: 4px 0px 0px 0px
+			.btn-div
+				.btn
+					font-family: 'Montserrat', sans-serif
+					font-weight: 600
+					border-radius: 30px
+					padding: 4px 20px 4px 20px
+					text-transform: uppercase
+					justify-self: flex-end
+					color: #FF004C
+					+media-breakpoint-down(md)
+						margin: 12px 0px
+		nav
+			height: 65px
+			backdrop-filter: blur(20px)
 
 
 .bg-light
 	background-color: rgba(167, 167, 167, 0.3)!important
 
-.navbar-collapse
-	+media-breakpoint-down(sm)
-		top: 80px
-    	position: absolute
-    
 
 .navbar-nav
 	font-family: 'Raleway', sans-serif
@@ -79,7 +106,7 @@
 
 .navbar-light .navbar-nav 
 	.nav-link
-		padding-right: 40px
+		padding-left: 40px
 		color: white
 	.nav-link.active 
 		color: white
@@ -93,13 +120,33 @@
 	font-weight: 600
 	color: white
 
-
 .navbar-logo
 	width: 50px
-	transform: translateY(-15%)
+	animation: test 2s ease 1s infinite alternate 
 
+// @keyframes test
+//   0%
+// 	background-color: red
+//   100%
+// 	background-color: blue
+
+// @keyframes flipAnim
+//   0%
+//     -webkit-transform: rotateY(0)
+// 	-moz-transform: rotateY(0)
+// 	transform: rotateY(0);
+//   100%
+//     -webkit-transform: rotateY(1800deg)
+// 	-moz-transform: rotateY(1800deg)
+// 	transform: rotateY(1800deg)
 
 /* NAVBAR */
+
+.heroes
+	position: relative
+	height: 100vh
+	background-color: aqua
+
 
 /* SLIDER */
 
