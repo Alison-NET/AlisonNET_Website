@@ -109,6 +109,8 @@ header .top-information
 			text-transform: uppercase
 			margin-left: 40px
 			transition: $transition-time1
+			+media-breakpoint-down(md)
+				margin-left: 50px
 	.show
 		>.nav-link
 			color: #3458f4 !important			
@@ -127,6 +129,8 @@ header .top-information
 					transform: scale(1.03)
 					color: white !important
 					opacity: 1
+		&-toggler
+			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%)
 
 
 .nav-white.nav-wrapper
