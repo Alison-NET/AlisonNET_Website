@@ -18,9 +18,11 @@ jQuery(document).ready(function($) {
     });
 
     $('.navbar-toggler').on('click', function(){
-        if($(this).hasClass('collapsed')){
-            $('.navbar-nav').toggleClass('blured-background');
-            alert('click open');
-        }
+        // if($(this).hasClass('collapsed')){
+        //     $('header').css('position','static');
+
+        // }else{
+        //     $('header').css('position','relative');
+        // }
     });
 });
