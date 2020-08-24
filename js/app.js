@@ -11,4 +11,18 @@ jQuery(document).ready(function($) {
         dots: true
     
     });
+
+    $('.top-information .close-icon').on('click', function(){
+        $('.top-information').remove();
+        // alert("close click");
+    });
+
+    $('.navbar-toggler').on('click', function(){
+        // if($(this).hasClass('collapsed')){
+        //     $('header').css('position','static');
+
+        // }else{
+        //     $('header').css('position','relative');
+        // }
+    });
 });
