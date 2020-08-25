@@ -555,7 +555,7 @@
 		justify-content: center
 		.title
 			display: inline
-			font-family: 'Montserrat', sans-serif
+			// font-family: 'Montserrat', sans-serif
 			font-size: 50px
 			font-weight: 700
 			color: white
@@ -566,47 +566,90 @@
 
 .service-info
 	padding: 90px 0px
-	.container
-		// height: 300px
-		.div-number
-			&-wrapper
-				position: relative
-				font-family: 'Raleway', sans-serif
-				.number-dots
-					width: 120px
-					position: absolute
-					top: 55px
-					left: 60px
+	&-number
+		display: inline-flex
+		align-items: center
+		height: 168px
+		padding-left: 68px
+		background: url('../images/dest/dots/cells-sharp.svg') no-repeat left bottom 
+		background-size: 128px
+		.value
+			color: $accent
+			font-size: 240px
+			font-weight: 500
+			line-height: 1
+		.desc
+			color: #C4C4C4
+			font-family: $font-raleway
+			font-size: 16px
+			font-weight: 600
+			text-transform: uppercase
+			line-height: 1.2
+	&-intro
+		position: relative
+		padding-left: 50px
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			display: block
+			width: 4px
+			border-radius: 4px
+			background-color: $accent
+		.title
+			margin-bottom: 20px
+			color: $accent
+			font-size: 24px
+			font-weight: 600
+		.desc
+			margin-bottom: 0
+			color: #000
+			font-size: 14px
+			font-weight: 200
 
-				.number
-					font-size: 240px
-					font-weight: 600
-					color: #224FAC
-					position: absolute
-					top: 60px
-					left: 120px
-					line-height: 0
-				.number-desc
-					font-size: 14px
-					font-weight: 500
-					color: #C4C4C4
-					width: 100px
-					position: absolute
-					top: 60px
-					left: 250px
-					// bottom: 0px
-
-		.div-texts
-			border-left: solid 4px #224FAC
-			padding-left: 40px
-			.title
-				font-size: 22px
-				font-weight: 600
-				color: #224FAC
-				margin-bottom: 16px
-			.desc		
-				font-family: 'Raleway', sans-serif
-				font-size: 16px
-				color: black	
 
 /* SERVICE INFO */
+
+/* SERVICE ITEMS */
+
+.service-items
+	padding: 80px 0px
+	background-color: #F8F8F8
+	&-header
+		font-size: 22px
+		font-weight: 600
+		color: #224FAC
+		margin-bottom: 16px
+		text-align: center
+	&-separator
+		width: 150px
+		border: solid 2px #224FAC
+		border-radius: 10px
+		margin-bottom: 70px
+		
+	.tile
+		padding: 40px
+		border: solid 1px #EEEEEE
+		border-radius: 5px
+		background-color: #FFF
+		&-header
+			margin: 0px 20px
+			.tile-img
+				width: 50px
+			.tile-title
+				font-family: $font-montserrat
+				font-size: 22px
+				color: $accent
+				margin: 0
+				margin-left: 22px
+		.tile-descr
+			color: #333333
+			font-family: $font-raleway
+			font-size: 16px
+			font-weight: 400
+			margin-top: 25px
+/* SERVICE ITEMS */
+
+
