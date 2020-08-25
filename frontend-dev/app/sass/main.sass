@@ -539,15 +539,16 @@
 
 .service-head
 	position: relative
-	height: 300px
+	height: 380px
 	overflow: hidden
-	&-image, &-text-wrapper
+	&-image
+		height: 100%
+		width: 100%	
+		object-fit: cover
+	&-text-wrapper
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
-	&-image
-		width: 100%	
-	&-text-wrapper
 		left: 0
 		right: 0
 		display: flex
@@ -556,12 +557,56 @@
 			display: inline
 			font-family: 'Montserrat', sans-serif
 			font-size: 50px
-			font-weight: 600
+			font-weight: 700
 			color: white
-			
-
-
-
 
 /* SERVICE HEAD */
 
+/* SERVICE INFO */
+
+.service-info
+	padding: 90px 0px
+	.container
+		// height: 300px
+		.div-number
+			&-wrapper
+				position: relative
+				font-family: 'Raleway', sans-serif
+				.number-dots
+					width: 120px
+					position: absolute
+					top: 55px
+					left: 60px
+
+				.number
+					font-size: 240px
+					font-weight: 600
+					color: #224FAC
+					position: absolute
+					top: 60px
+					left: 120px
+					line-height: 0
+				.number-desc
+					font-size: 14px
+					font-weight: 500
+					color: #C4C4C4
+					width: 100px
+					position: absolute
+					top: 60px
+					left: 250px
+					// bottom: 0px
+
+		.div-texts
+			border-left: solid 4px #224FAC
+			padding-left: 40px
+			.title
+				font-size: 22px
+				font-weight: 600
+				color: #224FAC
+				margin-bottom: 16px
+			.desc		
+				font-family: 'Raleway', sans-serif
+				font-size: 16px
+				color: black	
+
+/* SERVICE INFO */
