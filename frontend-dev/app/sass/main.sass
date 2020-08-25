@@ -541,10 +541,24 @@
 	position: relative
 	height: 380px
 	overflow: hidden
-	&-image
+	&-image-wrapper
 		height: 100%
-		width: 100%	
-		object-fit: cover
+		width: 100%
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			display: block
+			background: linear-gradient(to bottom, #303549 -30%, rgba(83,113,175,0.1) 100%)
+			opacity: 1
+		.image
+			height: 100%
+			width: 100%	
+			object-fit: cover
+		
 	&-text-wrapper
 		position: absolute
 		top: 50%
@@ -617,7 +631,7 @@
 
 .service-items
 	padding: 80px 0px
-	background-color: #F8F8F8
+	background-color: #F7F8F9
 	&-header
 		font-size: 30px
 		font-weight: 600
