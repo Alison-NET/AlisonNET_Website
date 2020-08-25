@@ -71,7 +71,7 @@
 		+media-breakpoint-down(xs)
 			font-size: 48px	
 	&-subtitle
-		font-family: 'Raleway', sans-serif
+		font-family: $font-raleway
 		font-size: 38px
 		font-weight: 200
 		text-transform: uppercase
@@ -188,7 +188,7 @@
 		color: #224FAC
 		margin-top: 12px
 	.card-desc
-		font-family: 'Raleway', sans-serif
+		font-family: $font-raleway
 		font-size: 15px
 		font-weight: 500
 		color: #717588
@@ -243,7 +243,7 @@
 		font-size: 12px
 		color: #AFB2C0
 	&-title
-		font-family: 'Raleway', sans-serif
+		font-family: $font-raleway
 		font-size: 14px
 		font-weight: 600
 		color: #717588
@@ -331,7 +331,7 @@
 			margin-top: 80px
 			margin-bottom: 30px
 	&-subtitle
-		font-family: 'Raleway', sans-serif
+		font-family: $font-raleway
 		font-size: 28px
 		font-style: italic
 		font-weight: 300
@@ -347,7 +347,7 @@
 		border-color: white
 		margin-top: 5px
 	&-desc 
-		font-family: 'Raleway', sans-serif
+		font-family: $font-raleway
 		font-size: 22px
 		font-weight: 400
 
@@ -384,7 +384,7 @@
 		+media-breakpoint-up(sm)
 			height: 340px	
 	.card-title
-		font-family: 'Montserrat', sans-serif
+		font-family: $font-montserrat
 		font-size: 18px
 		font-weight: 500
 		color: #224FAC
@@ -392,7 +392,7 @@
 			font-size: 20px
 			text-align: center
 	.card-text
-		font-family: 'Montserrat', sans-serif
+		font-family: $font-montserrat
 		font-size: 12px
 		font-weight: 500
 		color: #A0A5BB
@@ -414,7 +414,7 @@
 		+media-breakpoint-down(xs)
 			justify-content: center
 		.read-more
-			font-family: 'Montserrat', sans-serif
+			font-family: $font-montserrat
 			font-size: 14px
 			font-weight: 500
 			color: #132a3f
@@ -460,7 +460,7 @@
 		border-left: 3px solid #224FAC
 		border-radius: 100px
 	&-text
-		font-family: 'Montserrat', sans-serif
+		font-family: $font-montserrat
 		font-size: 16px
 		font-weight: 500
 		color: #A0A5BB
@@ -521,7 +521,7 @@
 			font-size: 36px
 			text-align: center
 	&-btn
-		font-family: 'Raleway', sans-serif
+		font-family: $font-raleway
 		font-size: 18px
 		font-weight: 600
 		color: #2E68E0
@@ -555,9 +555,8 @@
 		justify-content: center
 		.title
 			display: inline
-			// font-family: 'Montserrat', sans-serif
 			font-size: 50px
-			font-weight: 700
+			font-weight: 600
 			color: white
 
 /* SERVICE HEAD */
@@ -573,6 +572,8 @@
 		padding-left: 68px
 		background: url('../images/dest/dots/cells-sharp.svg') no-repeat left bottom 
 		background-size: 128px
+		+media-breakpoint-down(md)
+			margin-bottom: 40px
 		.value
 			color: $accent
 			font-size: 240px
@@ -618,13 +619,13 @@
 	padding: 80px 0px
 	background-color: #F8F8F8
 	&-header
-		font-size: 22px
+		font-size: 30px
 		font-weight: 600
 		color: #224FAC
 		margin-bottom: 16px
 		text-align: center
 	&-separator
-		width: 150px
+		width: 13%
 		border: solid 2px #224FAC
 		border-radius: 10px
 		margin-bottom: 70px
@@ -638,6 +639,7 @@
 			margin: 0px 20px
 			.tile-img
 				width: 50px
+				filter: invert(18%) sepia(99%) saturate(2781%) hue-rotate(226deg) brightness(87%) contrast(84%);
 			.tile-title
 				font-family: $font-montserrat
 				font-size: 22px
