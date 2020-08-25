@@ -18,11 +18,11 @@ jQuery(document).ready(function($) {
     });
 
     $('.navbar-toggler').on('click', function(){
-        // if($(this).hasClass('collapsed')){
-        //     $('header').css('position','static');
+        if($(this).hasClass('collapsed')){
+            $('header').css('position','static');
 
-        // }else{
-        //     $('header').css('position','relative');
-        // }
+        }else{
+            $('header').css('position','relative');
+        }
     });
 });

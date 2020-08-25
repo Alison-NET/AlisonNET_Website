@@ -113,24 +113,46 @@ header .top-information
 			transition: $transition-time1
 			+media-breakpoint-down(md)
 				margin-left: 50px
+		.dropdown-menu
+			+media-breakpoint-up(lg)
+				position: absolute;
+				top: 50px;
+				left: 20px;		
+			+media-breakpoint-down(md)
+				border: none
+				padding-left: 55px
 	.show
 		>.nav-link
 			color: #3458f4 !important		
 
 
 .nav-home.nav-wrapper
+	background-color: rgba(167, 167, 167, 0.3)!important
+	backdrop-filter: blur(20px)
 	.navbar
 		background-color: rgba(255, 255, 255, 0)!important
 		&-brand
 			color: white
 		&-nav 
-			.nav-link
+			.nav-link,	.dropdown-item
 				color: white
+				transition: $transition-time1
 				opacity: 0.8
 				&:hover
 					transform: scale(1.03)
 					color: white !important
 					opacity: 1
+			.dropdown-menu
+				background-color: rgba(167, 167, 167, 0.3)!important
+				backdrop-filter: blur(20px)
+				border: none
+				+media-breakpoint-down(md)
+					background-color: rgba(255, 255, 255, 0)!important
+					backdrop-filter: none
+				.dropdown-item
+					&:hover
+						background-color: rgba(255, 255, 255, 0)
+
 		&-toggler
 			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%)
 
@@ -147,10 +169,7 @@ header .top-information
 				&:hover
 					transform: scale(1.03)
 					color: black !important
-.blured-background
-	background-color: rgba(167, 167, 167, 0.3)!important
-	backdrop-filter: blur(20px)
-	
+
 
 
 // @keyframes test
