@@ -185,7 +185,7 @@
 	.card-title
 		font-size: 20px
 		font-weight: 600
-		color: #224FAC
+		color: $accent
 		margin-top: 12px
 	.card-desc
 		font-family: $font-raleway
@@ -218,7 +218,7 @@
 		border-width: 4px
 		width: 70px
 		border-radius: 10px
-		border-color: #224FAC
+		border-color: $accent
 		margin-top: 0px
 		margin-left: 0px
 	&-title
@@ -226,7 +226,7 @@
 		font-weight: 600
 		text-transform: uppercase
 		margin-left: 10px
-		color: #224FAC
+		color: $accent
 
 .news-item
 	&-time-container
@@ -283,13 +283,13 @@
 			width: 100px
 			border-width: 2px
 			border-radius: 10px
-			border-color: #224FAC
+			border-color: $accent
 			margin-left: 0
 			margin-top: 0
 	&-title
 		font-size: 36px
 		font-weight: 500
-		color: #224FAC
+		color: $accent
 	&-desc
 		width: 370px
 		font-family: 'Open Sans', sans-serif
@@ -387,7 +387,7 @@
 		font-family: $font-montserrat
 		font-size: 18px
 		font-weight: 500
-		color: #224FAC
+		color: $accent
 		+media-breakpoint-down(xs)
 			font-size: 20px
 			text-align: center
@@ -451,13 +451,13 @@
 	&-title
 		font-size: 34px
 		font-weight: 600
-		color: #224FAC
+		color: $accent
 		+media-breakpoint-down(xs)
 			margin-bottom: 14px
 	&-separator
 		height: 80px
 		width: 6px
-		border-left: 3px solid #224FAC
+		border-left: 3px solid $accent
 		border-radius: 100px
 	&-text
 		font-family: $font-montserrat
@@ -535,9 +535,9 @@
 
 /* CONNECT WITH US */
 
-/* SERVICE HEAD */
+/* PAGE HEAD */
 
-.service-head
+.page-head
 	position: relative
 	height: 380px
 	overflow: hidden
@@ -554,13 +554,11 @@
 			display: block
 			// background: linear-gradient(to bottom, #303549 -30%, rgba(83,113,175,0.1) 100%)
 			background: linear-gradient(to bottom, #1f2641d0 0%, #0c257ead 100%)
-
 			opacity: 1
 		.image
 			height: 100%
 			width: 100%	
 			object-fit: cover
-		
 	&-text-wrapper
 		position: absolute
 		top: 50%
@@ -570,12 +568,13 @@
 		display: flex
 		justify-content: center
 		.title
-			display: inline
+			color: white
+			text-align: center
 			font-size: 50px
 			font-weight: 600
-			color: white
+			text-align: center
 
-/* SERVICE HEAD */
+/* PAGE HEAD */
 
 /* SERVICE INFO */
 
@@ -626,7 +625,6 @@
 			font-size: 14px
 			font-weight: 200
 
-
 /* SERVICE INFO */
 
 /* SERVICE ITEMS */
@@ -637,15 +635,14 @@
 	&-header
 		font-size: 30px
 		font-weight: 600
-		color: #224FAC
+		color: $accent
 		margin-bottom: 16px
 		text-align: center
 	&-separator
 		width: 13%
-		border: solid 2px #224FAC
+		border: solid 2px $accent
 		border-radius: 10px
 		margin-bottom: 70px
-		
 	.tile
 		padding: 40px
 		border: solid 1px #EEEEEE
