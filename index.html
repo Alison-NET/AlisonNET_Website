@@ -14,7 +14,6 @@
 
 <body>
 	<header id="header" class="header-home">
-
 		<div class="header-container">
 			<!-- Top info -->
 			<div class="top-information">
@@ -67,7 +66,7 @@
 										<a class="dropdown-item" href="service-bi.html">Business Intelligence</a>
 									</div>
 								</li>
-								<a class="nav-link" href="#">Contact</a>
+								<a class="nav-link" href="contact.html">Contact</a>
 							</div>
 						</div>
 					</nav>
@@ -301,11 +300,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6 nopadding animate__animated animate__fadeIn wow">
-					<img src="images/dest/about-us.jpg" alt="" class="about-us-image" />
+					<img src="images/dest/page-main-image/about-us.jpg" alt="" class="about-us-image" />
 				</div>
 				<div class="col-md-6 about-us-content-container animate__animated animate__fadeIn wow">
-					<div class="about-us-content animate__animated animate__flipInX wow">
-						<h3 class="about-us-title">About us</h3>
+					<div class="about-us-content">
+						<h3 class="about-us-title animate__fadeInRight animate__animated wow">About us</h3>
 						<hr />
 						<p class="about-us-desc">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
@@ -325,11 +324,13 @@
 
 	<!-- Services -->
 
-	<section class="services d-flex align-items-md-center">
+	<section id="services" class="services d-flex align-items-md-center">
 		<div class="container">
 			<div class="services-texts text-center text-white animate__animated animate__fadeIn wow">
-				<h4 class="services-subtitle animate__animated animate__zoomIn wow">We work with</h4>
-				<h3 class="services-title animate__animated animate__rubberBand wow">Amazing services</h3>
+				<div class="animate__animated animate__zoomIn wow">
+					<h4 class="services-subtitle">We work with</h4>
+					<h3 class="services-title">Amazing services</h3>
+				</div>
 				<hr />
 				<p class="services-desc mt-25">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
@@ -340,7 +341,7 @@
 			<div class="services-cards mt-50 mb-25 animate__animated animate__fadeInUp wow">
 				<div class="row">
 					<div class="col-sm-6 col-lg-3">
-						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark">
+						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark-1">
 							<div class="card-body d-flex flex-column justify-content-between">
 								<img class="card-img-top" src="images/dest/icons/laptop.svg" alt="Card image cap" />
 								<h5 class="card-title">Consulting</h5>
@@ -354,7 +355,7 @@
 									<hr class="card-hr" />
 									<div class="card-bottom">
 										<small class="read-more">READ MORE</small>
-										<a href=""><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
+										<a href="service-consulting.html"><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
 									</div>
 								</div>
 							</div>
@@ -362,7 +363,7 @@
 					</div>
 
 					<div class="col-sm-6 col-lg-3">
-						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark">
+						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark-1">
 							<div class="card-body d-flex flex-column justify-content-between">
 								<img class="card-img-top" src="images/dest/icons/files.svg" alt="Card image cap" />
 								<h5 class="card-title">Business Intelligence</h5>
@@ -374,7 +375,7 @@
 									<hr class="card-hr" />
 									<div class="card-bottom">
 										<small class="read-more">READ MORE</small>
-										<a href=""><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
+										<a href="service-bi.html"><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
 									</div>
 								</div>
 							</div>
@@ -382,7 +383,7 @@
 					</div>
 
 					<div class="col-sm-6 col-lg-3">
-						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark">
+						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark-1">
 							<div class="card-body d-flex flex-column justify-content-between">
 								<img class="card-img-top" src="images/dest/icons/it.svg" alt="Card image cap" />
 								<h5 class="card-title">IT Support</h5>
@@ -395,7 +396,7 @@
 									<hr class="card-hr" />
 									<div class="card-bottom">
 										<small class="read-more">READ MORE</small>
-										<a href=""><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
+										<a href="service-itsupport.html"><img src="images/dest/icons/arrow (1).svg" alt="" class="arrow"></a>
 									</div>
 								</div>
 							</div>
@@ -403,7 +404,7 @@
 
 					</div>
 					<div class="col-sm-6 col-lg-3">
-						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark">
+						<div class="card zoom-on-hover custom-shadow-dark-on-hover custom-borders custom-shadow-dark-1">
 							<div class="card-body d-flex flex-column justify-content-between">
 								<img class="card-img-top" src="images/dest/icons/science.svg" alt="Card image cap" />
 								<h5 class="card-title">Shop</h5>
@@ -429,7 +430,7 @@
 
 	<!-- Location -->
 
-	<section id="location" class="location-map">
+	<section id="location" class="location-map custom-shadow-dark-2">
 		<div class="container-fluid">
 			<div class="container location">
 				<div class="row">
@@ -498,16 +499,16 @@
 				<div class="col-md-4 section">
 					<div class="section-name">Navigate</div>
 					<hr class="section-separator" />
-					<a href="">
+					<a href="index.html">
 						<div class="section-item">Home</div>
 					</a>
-					<a href="">
+					<a href="index.html#about-us">
 						<div class="section-item">About us</div>
 					</a>
-					<a href="">
+					<a href="index.html#services">
 						<div class="section-item">Services</div>
 					</a>
-					<a href="">
+					<a href="contact.html">
 						<div class="section-item">Contact</div>
 					</a>
 				</div>
@@ -515,16 +516,16 @@
 				<div class="col-md-4 section">
 					<div class="section-name">Services</div>
 					<hr class="section-separator" />
-					<a href="">
-						<div class="section-item">Shop</div>
+					<a href="service-covidkit.html">
+						<div class="section-item">Covid Kit</div>
 					</a>
-					<a href="">
+					<a href="service-consulting.html">
 						<div class="section-item">Consulting</div>
 					</a>
-					<a href="">
+					<a href="service-itsupport.html">
 						<div class="section-item">IT Support</div>
 					</a>
-					<a href="">
+					<a href="service-itsupport.html">
 						<div class="section-item">Business Intelligence</div>
 					</a>
 				</div>

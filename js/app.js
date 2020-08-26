@@ -17,12 +17,12 @@ jQuery(document).ready(function($) {
         // alert("close click");
     });
 
-    $('.navbar-toggler').on('click', function(){
-        if($(this).hasClass('collapsed')){
-            $('header').css('position','static');
+    // $('.navbar-toggler').on('click', function(){
+    //     // if($(this).hasClass('collapsed')){
+    //     //     $('.slick-prev, .slick-next').css('display','none');
 
-        }else{
-            $('header').css('position','relative');
-        }
-    });
+    //     // }else{
+    //     //     $('.slick-prev, .slick-next').css('display','static');
+    //     // }
+    // });
 });
