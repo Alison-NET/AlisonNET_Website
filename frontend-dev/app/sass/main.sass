@@ -671,39 +671,53 @@
 
 
 .contact-us
-	padding: 80px 0
+	padding: 130px 0 130px 0
 	background-color: #F7F8F9
-	&-texts
-		padding-left: 40px
-		&::before
-			content: ''
-			position: absolute
-			top: 20px
-			left: 0
-			bottom: 200px
-			display: block
-			width: 4px
-			border-radius: 10px
-			background-color: $accent
-		.title
-			color: $accent
-			font-size: 32px
-			font-weight: 600
-			margin-bottom: 10px
-		.descr
-			color: #575757
-			font-family: $font-raleway
-			font-size: 18px
-			font-weight: 300
-			line-height: 1.1
-	&-form
-		position: relative 
-		bottom: 140px
-		background-color: #fff
-		box-shadow: 1px 8px 15px 3px rgba(186,195,214,.2)
-		padding: 70px 50px
+	&-texts-wrapper
+		height: 100%
+		margin-bottom: 40px
+		.texts
+			padding-left: 40px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 20px
+				bottom: 50px
+				left: 0
+				display: block
+				width: 4px
+				border-radius: 10px
+				background-color: $accent
+			.title
+				color: $accent
+				font-size: 32px
+				font-weight: 600
+				margin-bottom: 10px
+			.descr
+				color: #575757
+				font-family: $font-raleway
+				font-size: 18px
+				font-weight: 300
+				line-height: 1.1
+	&-form-wrapper
+		position: absolute
+		bottom: -100px
 		+media-breakpoint-down(sm)
 			position: static
-		button
-			background-color: #265FD4
+		&::before
+			content: url('../images/dest/dots/cells-sharp.svg')
+			position: absolute
+			bottom: -35px
+			right: -38px
+			display: block
+			z-index: 0
+		form
+			background-color: #fff
+			box-shadow: 1px 8px 15px 3px rgba(186,195,214,.2)
+			padding: 70px 50px
+			position: relative
+			button
+				padding: 12px 18px
+				background-color: #265FD4
 
