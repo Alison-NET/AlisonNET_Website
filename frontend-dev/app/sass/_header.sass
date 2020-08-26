@@ -83,9 +83,9 @@ header
 		.nav-branding>a
 			text-decoration: none
 		&-logo
-			width: 45px
+			// width: 45px
 			// animation: rotate3d 10s cubic-bezier(0.3, 0.5, 0.5, 0.3) infinite
-			
+			height: 65px
 		&-brand
 			font-family: 'Raleway', sans-serif
 			position: relative
@@ -124,12 +124,13 @@ header
 					padding-left: 55px
 		.show
 			>.nav-link
-				color: #3458f4 !important		
+				color: #121083 !important
 
+.nav-home.nav-wrapper, .dropdown-menu
+	background-color: rgba(93, 78, 104, 0.425)!important
+	backdrop-filter: blur(20px)
 
 .nav-home.nav-wrapper
-	background-color: rgba(167, 167, 167, 0.3)!important
-	backdrop-filter: blur(20px)
 	.navbar
 		background-color: rgba(255, 255, 255, 0)!important
 		&-brand
@@ -144,8 +145,6 @@ header
 					color: white !important
 					opacity: 1
 			.dropdown-menu
-				background-color: rgba(167, 167, 167, 0.3)!important
-				backdrop-filter: blur(20px)
 				border: none
 				+media-breakpoint-down(md)
 					background-color: rgba(255, 255, 255, 0)!important
@@ -153,7 +152,6 @@ header
 				.dropdown-item
 					&:hover
 						background-color: rgba(255, 255, 255, 0)
-
 		&-toggler
 			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%)
 
