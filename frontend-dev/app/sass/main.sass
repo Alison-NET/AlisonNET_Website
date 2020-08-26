@@ -321,20 +321,16 @@
 
 /* ABOUT-US */
 
+
 /* SERVICES */
 
 .services
+	padding: 100px 0
 	background-image: url('../images/dest/dots/round-dots-blue.png')
 	background-repeat: no-repeat
 	background-size: cover
 	min-height: 110vh
 	overflow: hidden
-	.container
-		margin-top: 100px
-		margin-bottom: 100px
-		+media-breakpoint-down(xs)
-			margin-top: 80px
-			margin-bottom: 30px
 	&-subtitle
 		font-family: $font-raleway
 		font-size: 28px
@@ -345,7 +341,7 @@
 		font-size: 28px
 		font-weight: 500
 		text-transform: uppercase
-	&-texts > hr 
+	&-texts-separator 
 		width: 90px
 		border-width: 4px
 		border-radius: 10px
@@ -355,86 +351,51 @@
 		font-family: $font-raleway
 		font-size: 22px
 		font-weight: 400
-
-
-/* SERVICE-CARD */
-
-.services-cards 
-	margin-top: 50px
-	margin-bottom: 25px
-	// +media-breakpoint-down(sm)
-	// 	margin-top: 0px
-	// 	margin-bottom: 0px
-	// +media-breakpoint-up(sm)
-	// 	margin-top: 50px
-	// 	margin-bottom: 25px
-	+media-breakpoint-down(xs)
-		margin-top: 0px
-		margin-bottom: 0px
-	.card
-		margin: 0px
-		+media-breakpoint-down(md)
-			margin-bottom: 20px
-	.card-img-top
-		width: 64px
-		margin: 20px 0
-		+media-breakpoint-down(xs)
-			align-self: center
-	.card-body
-		padding: 30px
-		padding-bottom: 20px
-		height: 340px
-		+media-breakpoint-down(sm)
-			height: 300px
-		+media-breakpoint-up(sm)
-			height: 340px	
-	.card-title
-		font-family: $font-montserrat
-		font-size: 18px
-		font-weight: 500
-		color: $accent
-		+media-breakpoint-down(xs)
-			font-size: 20px
-			text-align: center
-	.card-text
-		font-family: $font-montserrat
-		font-size: 12px
-		font-weight: 500
-		color: #A0A5BB
-		overflow: hidden
-		text-overflow: ellipsis
-		display: -webkit-box
-		-webkit-line-clamp: 3 // number of lines to show
-		-webkit-box-orient: vertical
-	.card-hr
-		width: 50%
-		border-width: 2px
-		border-radius: 10px
-		border-color: #C5C9DA
-		margin-top: 20px
-	.card-bottom
-		display: flex
-		justify-content: space-between
-		align-items: center
-		+media-breakpoint-down(xs)
-			justify-content: center
-		.read-more
+	&-cards
+		.tile
+			padding: 40px 30px
+			height: 100%
 			font-family: $font-montserrat
-			font-size: 14px
-			font-weight: 500
-			color: #132a3f
-		.arrow
-			height: 27px		
-			margin-left: 10px
-			filter: invert(19%) sepia(11%) saturate(4257%) hue-rotate(171deg) brightness(90%) contrast(84%)
-			transition: $transition-time1
-			&:hover
-				transform: scale(1.2)
+			background-color: #fff
+			&-icon
+				width: 64px
+				filter: invert(18%) sepia(99%) saturate(2781%) hue-rotate(226deg) brightness(87%) contrast(84%)
+				margin-bottom: 20px
+				+media-breakpoint-down(sm)
+					align-self: center
+			&-title
+				color: $accent
+				font-family: $font-poppins
+				font-size: 22px
+				font-weight: 500
+				margin-bottom: 20px
+				+media-breakpoint-down(sm)
+					font-size: 24px
+					text-align: center
+			&-descr
+				color: #A0A5BB
+				font-size: 12px
+				font-weight: 500
+			&-separator
+				width: 50%
+				border: 2px solid #C5C9DA
+				border-radius: 10px
+			&-link
+				display: block
+				color: black
+				text-decoration: none
+				font-size: 14px
+				font-weight: 500
+				text-transform: uppercase
+				+media-breakpoint-down(sm)
+					text-align: center
 
-
-/* SERVICE-CARD */
 
 /* SERVICES */
+
+
+
+
 
 /* LOCATION */
 
@@ -684,8 +645,8 @@
 			&::before
 				content: ''
 				position: absolute
-				top: 20px
-				bottom: 50px
+				top: 10px
+				bottom: 10px
 				left: 0
 				display: block
 				width: 4px
@@ -704,7 +665,7 @@
 				line-height: 1.1
 	&-form-wrapper
 		position: absolute
-		bottom: -100px
+		bottom: -60px
 		+media-breakpoint-down(sm)
 			position: static
 		&::before
