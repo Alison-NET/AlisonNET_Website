@@ -61,7 +61,6 @@
 	position: relative
 	&-image
 		height: 100%
-		// max-width: 100%
 		width: 100%
 		object-fit: cover
 	&-title
@@ -95,7 +94,7 @@
 			transform: scale(1.05)
 
 
-.image-div
+.image-wrapper
 	height: 100vh
 	min-height: 600px
 	&::before
@@ -132,14 +131,17 @@
 		bottom: 40px
 	li
 		margin: 0
-		button::before
-			opacity: 0.3
-			font-size: 30px
-			color: white
-	li.slick-active button:before
-		opacity: 1
-		font-size: 50px
-		color: white	
+		button
+			&::before
+				opacity: 0.3
+				font-size: 30px
+				color: white
+	li.slick-active 
+		button
+			&::before
+				opacity: 1
+				font-size: 50px
+				color: white	
 
 .slick-prev,
 .slick-next
@@ -168,35 +170,33 @@
 .strengths-news
 	background-color: #eceff3
 	overflow: hidden 
-	> .container
-		padding: 100px 0px
+	padding: 100px 0px
 
-
-.strengths-card
+.strength-tile
+	padding: 30px 0px
+	background-color: #fff
 	margin-right: 75px
-	padding-left: 10px
-	padding-right: 25px
 	+media-breakpoint-down(md)
 		margin-right: 0px
-	+media-breakpoint-down(sm)
-		margin-right: 20px
-		margin-left: 20px
-	.card-icon
-		display: flex
-		justify-content: center
-		align-items: center
-		&-image
-			width: 50px
-	.card-title
-		font-size: 20px
-		font-weight: 600
-		color: $accent
-		margin-top: 12px
-	.card-desc
-		font-family: $font-raleway
-		font-size: 15px
-		font-weight: 500
-		color: #717588
+	.icon-wrapper
+		padding: 0px 35px
+		.icon
+			width: 55px
+	.texts
+		.title
+			color: $accent
+			font-size: 20px
+			font-weight: 600
+			margin-bottom: 10px
+		.descr
+			color: #717588
+			font-family: $font-raleway
+			font-size: 15px
+			font-weight: 600
+			line-height: 1.4
+			margin: 0 40px 0 0
+			+media-breakpoint-down(sm)
+				font-weight: 500
 
 
 /* STRENGTHS */
@@ -346,7 +346,6 @@
 		border-width: 4px
 		border-radius: 10px
 		border-color: white
-		margin-top: 5px
 	&-desc 
 		font-family: $font-raleway
 		font-size: 22px
