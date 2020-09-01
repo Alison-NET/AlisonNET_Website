@@ -711,27 +711,58 @@
 .product
 	padding: 100px 0px
 	&-image-wrapper
-		background-color: #F0F3F8
-		height: 620px
-	&-info-wrapper
+		// background-color: #F0F3F8
+		height: 520px
+		// padding: 20px
+		.image
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&-short-info-wrapper
 		padding-left: 20px
 		.title
 			color: #535A60
 			font-size: 38px
 			font-weight: 600
 		.price
-			color: $accent
+			color: #265FD4
 			font-size: 27px
 			font-weight: 500
+			margin-bottom: 10px
+		.rating
+			display: flex
+			margin-bottom: 18px
+			&-item
+				width: 24px
+				height: 24px
+				background: url('../images/dest/icons/star_empty_gray.svg') no-repeat center/cover
+				&:not(:last-child)
+					margin-right: 6px
+				&--filled
+					background-image: url('../images/dest/icons/star_full_gray.svg')
 		.info
+			font-family: $font-raleway
 			color: #899198
-			font-size: 14px
+			font-size: 15px
 			font-weight: 400
-			margin-bottom: 40px
+			margin-bottom: 26px
 		.order-btn
-			background-color: $accent
+			background-color: #265FD4
+			font-weight: 600
 			text-transform: uppercase
 			padding: 10px 20px
+			// margin-bottom: 40px
+		.short-info-items
+			.item
+				font-family: $font-raleway
+				&-title, &-body
+					color: #899198
+				&-title
+					font-weight: 600
+				&-body
+					font-weight: 400
+
+			.separator
 
 
 /* SHOP ITEM PAGE*/
