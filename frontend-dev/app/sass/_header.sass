@@ -48,7 +48,7 @@ header
 			+media-breakpoint-down(md)
 				justify-content: flex-start
 			.btn
-				font-family: 'Montserrat', sans-serif
+				font-family: $font-montserrat
 				font-size: 14px
 				font-weight: 600
 				border-radius: 30px
@@ -67,7 +67,7 @@ header
 			position: absolute
 			top: 50%
 			transform: translateY(-50%)
-			right: 10px
+			right: 15px
 			width: 15px
 			filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(325deg) brightness(105%) contrast(101%)
 			transition: $transition-time1
@@ -86,7 +86,7 @@ header
 			// animation: rotate3d 10s cubic-bezier(0.3, 0.5, 0.5, 0.3) infinite
 			// height: 65px
 		&-brand
-			font-family: 'Raleway', sans-serif
+			font-family: $font-opensans
 			position: relative
 			margin-left: 10px
 			.brand-title
@@ -105,8 +105,8 @@ header
 			+media-breakpoint-down(md)
 				margin: 20px 0px
 			.nav-link
-				font-family: 'Raleway', sans-serif
-				font-weight: 600
+				font-family: $font-poppins
+				font-weight: 500
 				font-size: 15px
 				text-transform: uppercase
 				margin-left: 40px
@@ -126,7 +126,7 @@ header
 				color: #121083 !important
 
 .nav-home, .nav-home .dropdown-menu
-	background-color: rgba(93, 78, 104, 0.425)!important
+	background-color: rgba(125, 128, 134, 0.315)!important
 	backdrop-filter: blur(20px)
 
 .nav-home.nav-wrapper

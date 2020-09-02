@@ -90,7 +90,7 @@
 		+media-breakpoint-down(xs)
 			font-size: 48px	
 	&-subtitle
-		font-family: $font-raleway
+		font-family: $font-opensans
 		font-size: 38px
 		font-weight: 200
 		text-transform: uppercase
@@ -189,9 +189,9 @@
 			margin-bottom: 10px
 		.descr
 			color: #717588
-			font-family: $font-raleway
+			font-family: $font-opensans
 			font-size: 15px
-			font-weight: 600
+			font-weight: 500
 			line-height: 1.4
 			margin: 0 40px 0 0
 			+media-breakpoint-down(sm)
@@ -247,9 +247,9 @@
 		font-size: 12px
 		color: #AFB2C0
 	&-title
-		font-family: $font-raleway
+		font-family: $font-opensans
 		font-size: 14px
-		font-weight: 600
+		font-weight: 500
 		color: #717588
 	> hr
 		margin-top: 0px
@@ -285,9 +285,9 @@
 			padding-left: 100px
 		> hr
 			width: 100px
-			border-width: 2px
+			height: 3px
 			border-radius: 10px
-			border-color: $accent
+			background-color: $accent
 			margin-left: 0
 			margin-top: 0
 	&-title
@@ -331,7 +331,7 @@
 	min-height: 110vh
 	overflow: hidden
 	&-subtitle
-		font-family: $font-raleway
+		font-family: $font-opensans
 		font-size: 28px
 		font-style: italic
 		font-weight: 300
@@ -346,7 +346,7 @@
 		border-radius: 10px
 		border-color: white
 	&-desc 
-		font-family: $font-raleway
+		font-family: $font-opensans
 		font-size: 22px
 		font-weight: 400
 	&-cards
@@ -376,7 +376,8 @@
 				font-weight: 500
 			&-separator
 				width: 50%
-				border: 2px solid #C5C9DA
+				height: 2px
+				background-color: #C5C9DA
 				border-radius: 10px
 			&-link
 				display: block
@@ -419,10 +420,10 @@
 		+media-breakpoint-down(xs)
 			margin-bottom: 14px
 	&-separator
-		height: 80px
-		width: 6px
-		border-left: 3px solid $accent
-		border-radius: 100px
+		height: 80px;
+		width: 4px;
+		background-color: $accent;
+		border-radius: 10px;
 	&-text
 		font-family: $font-montserrat
 		font-size: 16px
@@ -482,9 +483,9 @@
 			font-size: 36px
 			text-align: center
 	&-btn
-		font-family: $font-raleway
+		font-family: $font-poppins
 		font-size: 18px
-		font-weight: 600
+		font-weight: 500
 		color: #2E68E0
 		border-radius: 15px
 		width: 150px
@@ -557,7 +558,7 @@
 			line-height: 1
 		.desc
 			color: #C4C4C4
-			font-family: $font-raleway
+			font-family: $font-opensans
 			font-size: 16px
 			font-weight: 600
 			text-transform: uppercase
@@ -581,8 +582,9 @@
 			font-size: 24px
 			font-weight: 600
 		.desc
+			color: #333	
+			font-family: $font-opensans
 			margin-bottom: 0
-			color: #000
 			font-size: 14px
 			font-weight: 200
 
@@ -600,10 +602,11 @@
 		margin-bottom: 16px
 		text-align: center
 	&-separator
-		width: 13%
-		border: solid 2px $accent
-		border-radius: 10px
-		margin-bottom: 70px
+		width: 13%;
+		height: 4px;
+		background-color: $accent;
+		border-radius: 10px;
+		margin-bottom: 70px;
 	.tile
 		padding: 40px
 		border: solid 1px #EEEEEE
@@ -616,17 +619,18 @@
 				width: 50px
 				filter: invert(18%) sepia(99%) saturate(2781%) hue-rotate(226deg) brightness(87%) contrast(84%);
 			.tile-title
-				font-family: $font-montserrat
-				font-size: 22px
+				font-family: $font-poppins
+				font-weight: 400
+				font-size: 24px
 				color: $accent
 				margin: 0
 				margin-left: 22px
 		.tile-descr
-			color: #333333
-			font-family: $font-raleway
+			color: #333
+			font-family: $font-opensans
 			font-size: 16px
-			font-weight: 400
-			margin-top: 25px
+			font-weight: 300
+			margin-top: 20px
 /* SERVICE ITEMS */
 
 /* CONTACT US*/
@@ -659,7 +663,7 @@
 				margin-bottom: 10px
 			.descr
 				color: #575757
-				font-family: $font-raleway
+				font-family: $font-opensans
 				font-size: 18px
 				font-weight: 300
 				line-height: 1.1
@@ -710,6 +714,34 @@
 .product
 	padding: 100px 0px
 	.slick-product-images
+		.slick-next:before, .slick-prev:before
+			filter: invert(79%) sepia(4%) saturate(602%) hue-rotate(167deg) brightness(101%) contrast(89%)
+		.slick-dots
+			bottom: 10px
+		.slick-dots li button::before
+			color: #BDC7D0
+		.slick-dots li.slick-active button::before
+			color: #BDC7D0//$accent
+		.slick-arrow,
+		.slick-dots
+			opacity: 0
+			transition: .3s ease
+		.slick-arrow
+			&.slick-prev
+				left: 5px
+			&.slick-next
+				right: 5px
+		&:hover
+			.slick-arrow,
+			.slick-dots
+				opacity: 1
+			.slick-dots
+				bottom: 25px
+			.slick-arrow
+				&.slick-prev
+					left: 15px
+				&.slick-next
+					right: 15px
 		.image-wrapper
 			height: 520px
 			.image
@@ -742,7 +774,7 @@
 				&--filled
 					background-image: url('../images/dest/icons/star_full_gray.svg')
 		.info
-			font-family: $font-raleway
+			font-family: $font-opensans
 			color: #899198
 			font-size: 15px
 			font-weight: 400
@@ -755,7 +787,7 @@
 			// margin-bottom: 40px
 		.short-info-items
 			.item
-				font-family: $font-raleway
+				font-family: $font-opensans
 				&-title, &-body
 					color: #899198
 				&-title
@@ -773,7 +805,7 @@
 				margin-bottom: 16px
 			p
 				color: #899198
-				font-family: $font-raleway
+				font-family: $font-opensans
 	&-section
 		padding-top: 40px
 		&-title
@@ -810,14 +842,17 @@
 					text-decoration: none
 	
 .product-entry
-	.slick-product-images
-		.image-wrapper
-			height: 370px
+	.image-wrapper
+		height: 370px
+		.image
+			width: 100%
+			height: 100%
+			object-fit: cover
 	&-content
 		margin-top: 16px
 		.category
 			color: #899198
-			font-family: $font-raleway
+			font-family: $font-opensans
 			font-size: 13px
 			font-weight: 400
 			margin-bottom: 10px
