@@ -12,6 +12,14 @@ jQuery(document).ready(function($) {
 	
 	});
 
+	$('.slick-product-images, .slick-product-entry-images').slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
+	  });
+
 	$('.top-information .close-icon').on('click', function(){
 		$('.top-information').remove();
 	});
