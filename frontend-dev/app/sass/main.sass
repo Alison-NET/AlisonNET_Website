@@ -34,7 +34,6 @@
 		box-shadow: -1px 6px 30px 0px #2e4881a6
 
 
-
 .zoom-on-hover
 	transition: $transition-time1
 	&:hover
@@ -690,26 +689,52 @@
 
 /* CONTACT US*/
 
-/* SHOP ITEM PAGE*/
-
-.product-page-head
-	position: relative
-	height: 200px
-	background-color: #F7F8F9
-	&-text-wrapper
-		position: absolute
-		top: 50%
-		transform: translateY(-50%)
-		left: 0
-		right: 0
+/* Breadcrumbs */
+.breadcrumbs
+	&-list
 		display: flex
-		justify-content: center
-		.title
-			color: $shop-title-color
-			text-align: center
+		flex-wrap: wrap
+		align-items: center
+		> li
+			display: inline-flex
+			align-items: center
 			font-size: 32px
 			font-weight: 600
-			text-align: center
+			&:not(:last-child)::after
+				content: '>'
+				margin: 0 12px
+				color: #fff
+			> a,
+			span
+				color: #fff
+				text-decoration: none
+
+/* Breadcrumbs */
+
+/* SHOP ITEM PAGE*/
+
+.page-head-small
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 200px
+	&--blue
+		background-color: $accent
+		.title
+			color: #fff
+	&--gray
+		background-color: #F7F8F9
+		.breadcrumbs-list > li,
+		.breadcrumbs-list > li::after,
+		.breadcrumbs-list > li > a,
+		.breadcrumbs-list > li > span
+			color: $shop-title-color
+	.title
+		color: $shop-title-color
+		font-size: 32px
+		font-weight: 600
+		text-align: center
 
 .product
 	padding: 100px 0px
