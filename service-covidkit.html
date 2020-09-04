@@ -80,22 +80,26 @@
 	</header>
 
 	<!-- Page Head -->
-	<section class="product-page-head">
-		<div class="product-page-head-text-wrapper">
-			<h2 class="title animate__animated animate__fadeIn wow">Shop > Medical Kits</h2>
+	<section class="page-head-small page-head-small--gray">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs-list animate__animated animate__fadeIn wow">
+				<li><a href="shop.html">Shop</a></li>
+				<li><span>Medical Kits</span></li>
+			</ul>
 		</div>
+		<!-- <h2 class="title animate__animated animate__fadeIn wow">Shop > Medical Kits</h2> -->
 	</section>
 
 
 	<section class="product">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row align-items-center animate__animated animate__fadeIn wow">
 				<div class="col-md-5">
 					<div class="slick-product-images">
 						<div class="image-wrapper">
 							<img src="https://wpbingosite.com/wordpress/phami/wp-content/uploads/2019/04/Image-15.jpg"
 								alt="" class="image">
-						</div>
+						</div>		
 						<div class="image-wrapper">
 							<img src="https://wpbingosite.com/wordpress/phami/wp-content/uploads/2019/04/Image-2.jpg"
 								alt="" class="image">
@@ -108,19 +112,71 @@
 				</div>
 				<div class="col-md-7">
 					<div class="product-general-info-wrapper ">
-						<h3 class="title">Medical Bandages</h3>
-						<p class="price">$46.00</p>
-						<div class="rating">
+						<h3 class="title animate__fadeInDown animate__animated wow">Medical Bandages</h3>
+						<p class="price animate__fadeInDown animate__animated wow">$46.00</p>
+						<!-- <div class="rating">
 							<span class="rating-item rating-item--filled"></span>
 							<span class="rating-item rating-item--filled"></span>
 							<span class="rating-item"></span>
 							<span class="rating-item"></span>
 							<span class="rating-item"></span>
-						</div>
+						</div> -->
 						<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus,
 							non suscipit arcu warranty. Quisque aliquam posuere tortor, sit amet convallis nunc as
 							product engineering, warranty management. Lorem lorem ipsum dolor sit amet.</p>
-						<a href="" class="order-btn btn btn-primary">Order</a>
+						<!-- Button trigger modal -->
+						<button type="button" class="order-btn btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+							Order now
+						</button>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								
+								<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalCenterTitle">Order now</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								</div>
+								<div class="modal-body">
+									<form class="form custom-borders animate__fadeInUp animate__animated wow">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<input type="text" class="form-control" placeholder="Name">
+											</div>
+											<div class="form-group col-md-6">
+												<input type="email" class="form-control" placeholder="Email">
+											</div>
+			
+											<div class="form-group col-md-6">
+												<input type="tel" class="form-control" placeholder="Phone Number">
+											</div>
+											<div class="form-group col-md-6">
+												<select class="form-control">
+													<option selected disabled hidden>Service...</option>
+													<option>IT Support</option>
+													<option>Consulting</option>
+												</select>
+											</div>
+			
+										</div>
+										<div class="form-group">
+											<textarea class="form-control" rows="5" placeholder="Message*"></textarea>
+										</div>
+			
+										<button type="submit" class="btn btn-primary form-submit">Send message</button>
+									</form>
+								</div>
+								<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Submit order</button>
+								</div>
+
+
+							</div>
+							</div>
+						</div>
 						<!-- <div class="short-info-items">
 							<div class="item">
 								<span class="item-title">Categories:</span>
@@ -133,7 +189,7 @@
 				</div>
 			</div>
 			<div class="product-descr">
-				<div class="product-descr-section">
+				<div class="product-descr-section animate__animated animate__fadeIn wow">
 					<div class="row">
 						<div class="col-md-5">
 							<h4 class="title">Description</h4>
@@ -146,7 +202,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="product-descr-section">
+				<div class="product-descr-section animate__animated animate__fadeIn wow">
 					<div class="row">
 						<div class="col-md-5">
 							<h4 class="title">Features</h4>
@@ -159,7 +215,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="product-descr-section">
+				<div class="product-descr-section animate__animated animate__fadeIn wow">
 					<div class="row">
 						<div class="col-md-5">
 							<h4 class="title">Other things</h4>

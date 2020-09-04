@@ -12,10 +12,6 @@ function tryToggleTopInfo(){
 	
 	if(!topInfoAppearTime)return;
 
-	console.log(`Now: ${currDate}`);
-	console.log(`Got parsed: ${topInfoAppearTime}`);
-	console.log(`currDate<topInfoAppearTime ${currDate<topInfoAppearTime}`)
-
 	if(currDate<topInfoAppearTime){
 		$('.top-information').remove();
 	}else{
@@ -36,9 +32,6 @@ jQuery(document).ready(function($) {
 		let appearTime = new Date();
 		appearTime.setMinutes(currDate.getMinutes()+1);
 
-		console.log(`Now: ${currDate}`);
-		console.log(`In 1 min: ${appearTime}`);
-		
 		localStorage.setItem('topInfoAppearTime', appearTime);
 		console.log(localStorage);
 		$('.top-information').remove();
