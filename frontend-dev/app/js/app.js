@@ -1,26 +1,46 @@
 document.addEventListener("DOMContentLoaded", function() {
-
 	// Custom JS
-
 });
 
-jQuery(document).ready(function($) { 
-	new WOW().init();
+tryToggleTopInfo();
 
-	$('.slick-services').slick({
-		dots: true
+function tryToggleTopInfo(){
+
+	console.log(localStorage);
+	let currDate = new Date();
+	let topInfoAppearTime = Date.parse(localStorage.getItem('topInfoAppearTime'));
 	
-	});
+	if(!topInfoAppearTime)return;
 
-	$('.slick-product-images, .slick-product-entry-images').slick({
-		dots: true,
-		infinite: true,
-		speed: 500,
-		fade: true,
-		cssEase: 'linear'
-	  });
+	console.log(`Now: ${currDate}`);
+	console.log(`Got parsed: ${topInfoAppearTime}`);
+	console.log(`currDate<topInfoAppearTime ${currDate<topInfoAppearTime}`)
+
+	if(currDate<topInfoAppearTime){
+		$('.top-information').remove();
+	}else{
+		localStorage.removeItem('topInfoAppearTime');
+	}
+};
+
+jQuery(document).ready(function($) { 
+
+	// localStorage.clear();
+
+
+	turnOnLibrariesStaff();
 
 	$('.top-information .close-icon').on('click', function(){
+		
+		let currDate = new Date();
+		let appearTime = new Date();
+		appearTime.setMinutes(currDate.getMinutes()+1);
+
+		console.log(`Now: ${currDate}`);
+		console.log(`In 1 min: ${appearTime}`);
+		
+		localStorage.setItem('topInfoAppearTime', appearTime);
+		console.log(localStorage);
 		$('.top-information').remove();
 	});
 
@@ -44,4 +64,23 @@ jQuery(document).ready(function($) {
 			});
 			return false;
 		});
+	
+		
+
+		function turnOnLibrariesStaff(){
+			new WOW().init();
+
+			$('.slick-services').slick({
+				dots: true
+			
+			});
+		
+			$('.slick-product-images, .slick-product-entry-images').slick({
+				dots: true,
+				infinite: true,
+				speed: 500,
+				fade: true,
+				cssEase: 'linear'
+			  });
+		}
 });
