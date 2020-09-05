@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	// Custom JS
 });
 
-tryToggleTopInfo();
+tryMuteTopInfo();
 
-function tryToggleTopInfo(){
+function tryMuteTopInfo(){
 
 	console.log(localStorage);
 	let currDate = new Date();
@@ -22,7 +22,6 @@ function tryToggleTopInfo(){
 jQuery(document).ready(function($) { 
 
 	// localStorage.clear();
-
 
 	turnOnLibrariesStaff();
 
