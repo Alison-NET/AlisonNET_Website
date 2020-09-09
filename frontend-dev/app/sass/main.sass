@@ -95,7 +95,7 @@
 		+media-breakpoint-down(md)
 			font-size: 22px
 	&-btn
-		background-color: #3458F4
+		background-color: $btn-accent
 		border-radius: 30px
 		padding: 12px 30px
 		margin-top: 20px
@@ -242,7 +242,7 @@
 	&-time
 		font-family: $font-opensans
 		font-size: 12px
-		color: #AFB2C0
+		color: #717588
 	&-title
 		font-family: $font-opensans
 		font-size: 14px
@@ -466,7 +466,7 @@
 		font-family: $font-poppins
 		font-size: 18px
 		font-weight: 500
-		color: #2E68E0
+		color: $btn-accent//#2E68E0
 		border-radius: 15px
 		width: 150px
 		padding: 16px 26px
@@ -556,10 +556,10 @@
 			font-weight: 600
 		.desc
 			color: #333	
-			font-family: $font-opensans
+			font-family: $font-raleway
 			margin-bottom: 0
-			font-size: 14px
-			font-weight: 200
+			font-size: 16px
+			font-weight: 300
 
 /* SERVICE INFO */
 
@@ -592,15 +592,15 @@
 				width: 50px
 				filter: invert(18%) sepia(99%) saturate(2781%) hue-rotate(226deg) brightness(87%) contrast(84%);
 			.tile-title
-				font-family: $font-poppins
+				// font-family: $font-montserrat
 				font-weight: 400
-				font-size: 24px
+				font-size: 26px
 				color: $accent
 				margin: 0
 				margin-left: 22px
-		.tile-descr
+		&-descr
 			color: #333
-			font-family: $font-opensans
+			font-family: $font-raleway
 			font-size: 16px
 			font-weight: 300
 			margin-top: 20px
@@ -634,13 +634,13 @@
 				color: $accent
 				font-size: 32px
 				font-weight: 600
-				margin-bottom: 10px
+				margin-bottom: 8px
 			.descr
 				color: #575757
 				font-family: $font-opensans
 				font-size: 18px
 				font-weight: 300
-				line-height: 1.1
+				line-height: 1.25
 	&-form-wrapper
 		position: absolute
 		bottom: -60px
@@ -658,11 +658,69 @@
 			box-shadow: 1px 8px 15px 3px rgba(186,195,214,.2)
 			padding: 70px 50px
 			position: relative
+			input, option, textarea
+				padding: 10px 20px
 			button
+				letter-spacing: 0.05em
 				padding: 12px 18px
 				background-color: #265FD4
 
 /* CONTACT US*/
+
+
+/* NOTIFICATION CARD */
+
+.notification-card
+	position: fixed
+	bottom: 25px
+	right: 35px
+	padding: 25px 32px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	z-index: 99
+	border-radius: 15px
+	background: linear-gradient(to right, #2361E1 0%, #8A21DC 100%)
+	box-shadow: 0px 4px 16px 2px rgba(111,80,233,0.7);
+	opacity: 0
+	pointer-events: none
+	&--active
+		pointer-events: all
+	.texts
+		margin: 0 8px 0 25px
+		.title
+			color: #fff
+			font-size: 17px
+			font-weight: 500
+			margin-bottom: 6px
+		.subtitle	
+			color: #ffffffda
+			font-size: 12px
+			font-weight: 300
+			line-height: 1.2
+			margin: 0
+	.check-icon, .close-icon
+		filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%)
+		opacity: 0.3
+	.check-icon
+		width: 27px
+		height: 27px
+	.close-icon
+		width: 10px
+		height: 10px
+		cursor: pointer
+		position: absolute
+		top: 12px
+		right: 14px
+		transition: $transition-time1
+		&:hover
+			transform: scale(1.3)
+			opacity: 0.7
+
+
+
+/* NOTIFICATION CARD */
+
 
 /* Breadcrumbs */
 .breadcrumbs
